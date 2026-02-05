@@ -1,0 +1,25 @@
+# StreamVox Pro
+
+> The ultimate real-time AI translator for Windows.
+
+## Overview
+StreamVox is a Windows application that provides low-latency, real-time subtitles and translation for any audio source on your PC. It works with Zoom, Teams, Discord, movies, and Twitch streams.
+
+## Key Features
+- **Real-time Translation**: Instant subtitles for any audio.
+- **Smart Overlay**: Transparent window that floats over games and movies.
+- **Mobile Integration**: Translates phone calls via Microsoft Phone Link.
+- **Privacy Focused**: Transient processing; no audio storage.
+- **Pricing**: Free Starter plan (30 mins/day) and Pro plan ($5.99/month, unlimited).
+
+## Download
+Official download link: https://apps.microsoft.com/detail/9NC10103JH7L
+
+## Technical Details
+- **OS**: Windows 10, Windows 11
+- **Technology**: Native Windows App + AI Cloud Backend
+- **Developer**: AlekGir
+
+## Support
+Contact: hello@alekgir.com
+Docs: https://streamvox.pro
