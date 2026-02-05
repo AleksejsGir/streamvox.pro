@@ -32,15 +32,16 @@ export function Footer() {
                 <div>
                     <h4 className="font-semibold mb-3">Legal</h4>
                     <ul className="space-y-2 text-text-muted">
-                        <li><Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link></li>
-                        <li><Link href="#" className="hover:text-white transition-colors">Terms of Service</Link></li>
+                        <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
+                        <li><Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link></li>
+                        <li><Link href="/refund-policy" className="hover:text-white transition-colors">Refund Policy</Link></li>
                     </ul>
                 </div>
 
                 <div>
                     <h4 className="font-semibold mb-3">Connect</h4>
                     <ul className="space-y-2 text-text-muted">
-                        <li><a href="mailto:support@streamvox.pro" className="hover:text-white transition-colors">Support</a></li>
+                        <li><a href="mailto:hello@alekgir.com" className="hover:text-white transition-colors">Support</a></li>
                         <li><a href="https://twitter.com/alekgir" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Twitter</a></li>
                     </ul>
                 </div>
