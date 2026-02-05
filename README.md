@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# StreamVox.pro - Real-Time AI Translator for Windows
 
-## Getting Started
+![StreamVox App Showcase](/public/assets/showcase/StreamVox_main.png)
 
-First, run the development server:
+> **Break Language Barriers Instantly.**
+> Live subtitles for calls, meetings, streams, and mobile conversations in seconds.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Overview
+
+**StreamVox** is a next-generation AI translation tool designed specifically for Windows 10 & 11. It provides real-time, low-latency subtitles for any audio source on your PC—whether it's a Zoom meeting, a Twitch stream, a movie, or even a phone call via Microsoft Phone Link.
+
+Built with performance and aesthetics in mind, StreamVox floats seamlessly over your content, offering a "magic" translation layer that feels native to your OS.
+
+## ✨ Key Features
+
+- **🎙️ Calls & Meetings**: Instant subtitles for Zoom, Teams, Discord, and Skype.
+- **📱 Mobile Translation**: Connect iOS/Android via Phone Link and get subtitles for phone calls on your desktop.
+- **🎬 Smart Overlay**: A transparent, "invisible" window mode that sits on top of movies or games without blocking the view.
+- **⚡ Low Latency AI**: Ultra-fast transcription and translation powered by advanced speech-to-text models.
+- **🎨 Windows 11 Design**: Sleek, dark-mode interface with glassmorphism effects that matches the modern Windows aesthetic.
+- **🔒 Privacy First**: All audio processing is handled securely; we prioritize user privacy.
+
+## 🛠️ Tech Stack
+
+This website and landing page are built using modern web technologies to ensure speed, SEO optimization, and a premium user experience.
+
+- **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Architecture**: Feature-Sliced Design (FSD)
+- **Icons**: [Lucide React](https://lucide.dev/)
+
+## 📂 Project Structure
+
+The project follows the **Feature-Sliced Design (FSD)** methodology for scalability and maintainability:
+
+```text
+src/
+├── app/           # Next.js App Router (Pages & Layouts)
+├── feature/       # Business logic (e.g., Smart Overlay Demo)
+├── widgets/       # Large UI blocks (Hero, Navbar, Features)
+├── shared/        # Reusable components & utilities (UI Kit)
+└── assets/        # Static media files
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To run this project locally:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/streamvox.pro.git
+    cd streamvox.pro
+    ```
 
-## Learn More
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+3.  **Run the development server**:
+    ```bash
+    npm run dev
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4.  Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📥 Download
 
-## Deploy on Vercel
+StreamVox is available exclusively on the Microsoft Store.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[**Download for Windows**](https://apps.microsoft.com/detail/9NC10103JH7L)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+© 2026 AlekGir. All rights reserved.
