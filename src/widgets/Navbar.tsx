@@ -39,8 +39,12 @@ export function Navbar() {
             )}
         >
             <Container className="flex items-center justify-between relative">
-                <Link href="/" className="text-2xl font-bold tracking-tighter relative z-50">
-                    Stream<span className="text-primary">Vox</span>
+                <Link href="/" className="relative z-50">
+                    <img
+                        src="/assets/Logo/SteramVox_logo.jpg"
+                        alt="StreamVox Logo"
+                        className="h-10 w-auto rounded-xl"
+                    />
                 </Link>
 
                 {/* Desktop Menu */}

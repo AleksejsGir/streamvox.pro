@@ -8,8 +8,12 @@ export function Footer() {
         <footer className="border-t border-white/10 bg-black py-12 text-sm">
             <Container className="grid md:grid-cols-4 gap-8">
                 <div className="space-y-4">
-                    <Link href="/" className="text-xl font-bold tracking-tighter">
-                        Stream<span className="text-primary">Vox</span>
+                    <Link href="/" className="inline-block">
+                        <img
+                            src="/assets/Logo/SteramVox_logo.jpg"
+                            alt="StreamVox Logo"
+                            className="h-10 w-auto rounded-xl"
+                        />
                     </Link>
                     <p className="text-text-muted">
                         The next-generation real-time AI translator for Windows.
