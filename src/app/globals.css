@@ -6,7 +6,7 @@
   --surface: #141416;
   --primary: #06B6D4;
   --secondary: #8B5CF6;
-  
+
   /* Text */
   --text-main: #FFFFFF;
   --text-muted: #A1A1AA;
@@ -21,7 +21,7 @@
   --color-surface: var(--surface);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
-  
+
   --color-text-main: var(--text-main);
   --color-text-muted: var(--text-muted);
 
@@ -45,13 +45,29 @@ body {
   border: 1px solid var(--border-glass);
 }
 
+@keyframes text-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .text-gradient {
-  background: linear-gradient(to right, var(--primary), var(--secondary));
+  background: linear-gradient(to right, var(--primary), var(--secondary), var(--primary));
+  background-size: 200% auto;
   -webkit-background-clip: text;
-  background-clip: text; /* Standard property */
+  background-clip: text;
   color: transparent;
+  animation: text-flow 6s linear infinite;
 }
 
 .glow-primary {
-    box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
 }

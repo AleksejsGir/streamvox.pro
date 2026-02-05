@@ -1,6 +1,7 @@
 import { Navbar } from "@/widgets/Navbar";
 import { Hero } from "@/widgets/Hero";
 import { UseCases } from "@/widgets/UseCases";
+import { Features } from "@/widgets/Features";
 import { SmartOverlayDemo } from "@/features/SmartOverlay/Demo";
 import { Footer } from "@/widgets/Footer";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <UseCases />
+      <Features />
       <SmartOverlayDemo />
       <Footer />
     </main>

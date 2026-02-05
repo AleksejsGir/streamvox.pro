@@ -9,12 +9,13 @@ export function SmartOverlayDemo() {
 
     return (
         <section className="py-24 overflow-hidden relative">
+            <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/5 via-background to-background" />
             <Container>
-                <div className="grid lg:grid-cols-2 gap-16 items-center">
-                    <div className="order-2 lg:order-1 space-y-8">
+                <div className="grid lg:grid-cols-12 gap-12 items-center">
+                    <div className="order-2 lg:order-1 lg:col-span-4 space-y-8">
                         <h2 className="text-3xl md:text-5xl font-bold">
                             The &quot;Invisible&quot; <br />
-                            <span className="text-gradient">Smart Overlay.</span>
+                            <span className="text-gradient">Smart Overlay</span>
                         </h2>
                         <p className="text-text-muted text-lg">
                             StreamVox floats above your content. Adjust the transparency to keep subtitles visible without blocking your view.
@@ -44,13 +45,18 @@ export function SmartOverlayDemo() {
                         </div>
                     </div>
 
-                    <div className="order-1 lg:order-2 relative group">
+                    <div className="order-1 lg:order-2 lg:col-span-8 relative group">
                         <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
                         <div className="relative rounded-2xl overflow-hidden aspect-video bg-[#0f0f11] border border-white/10 shadow-2xl">
                             {/* Fake Background Content */}
-                            <div className="absolute inset-0 flex items-center justify-center bg-gray-800 bg-cover bg-center opacity-50">
-                                <div className="bg-black/40 p-4 rounded text-white font-bold">Background Content (Movie/Game)</div>
-                            </div>
+                            <video
+                                src="/assets/video/StreamVox_movie.mp4"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                className="absolute inset-0 w-full h-full object-cover opacity-80"
+                            />
 
                             {/* The Smart Overlay */}
                             <div
@@ -64,7 +70,7 @@ export function SmartOverlayDemo() {
                                     <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
                                     <span className="text-xs uppercase tracking-wider text-primary font-bold">Live Translation</span>
                                 </div>
-                                <p className="text-lg md:text-xl font-medium text-white leading-relaxed">
+                                <p className="text-base md:text-xl font-medium text-white leading-relaxed">
                                     &quot;This is how the overlay looks on your screen. You decide how visible the background should be.&quot;
                                 </p>
                                 <p className="text-sm text-gray-400 mt-1">original: &quot;C&apos;est à cela que ressemble la superposition sur votre écran.&quot;</p>
