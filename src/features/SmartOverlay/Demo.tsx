@@ -3,11 +3,10 @@
 import { useState } from "react";
 import { Container } from "@/shared/ui/Container";
 import { Sliders } from "lucide-react";
-import { useIsMobile } from "@/shared/lib/useIsMobile";
+import { LazyVideo } from "@/shared/ui/LazyVideo";
 
 export function SmartOverlayDemo() {
     const [opacity, setOpacity] = useState(70);
-    const isMobile = useIsMobile();
 
     return (
         <section className="py-24 overflow-hidden relative">
@@ -51,13 +50,8 @@ export function SmartOverlayDemo() {
                         <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
                         <div className="relative rounded-2xl overflow-hidden aspect-video bg-[#0f0f11] border border-white/10 shadow-2xl">
                             {/* Fake Background Content */}
-                            <video
+                            <LazyVideo
                                 src="/assets/video/StreamVox_movie.mp4"
-                                autoPlay={!isMobile}
-                                loop
-                                muted
-                                playsInline
-                                preload={isMobile ? "none" : "auto"}
                                 className="absolute inset-0 w-full h-full object-cover opacity-80"
                             />
 
