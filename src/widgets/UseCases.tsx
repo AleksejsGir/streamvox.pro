@@ -3,6 +3,7 @@
 import { Container } from "@/shared/ui/Container";
 import { GlassCard } from "@/shared/ui/GlassCard";
 import { Briefcase, Film, Smartphone, Gamepad2 } from "lucide-react";
+import { useIsMobile } from "@/shared/lib/useIsMobile";
 
 const cases = [
     {
@@ -36,6 +37,8 @@ const cases = [
 ];
 
 export function UseCases() {
+    const isMobile = useIsMobile();
+
     return (
         <section id="features" className="py-24 relative overflow-hidden">
             <div className="absolute inset-0 z-0">
@@ -61,10 +64,11 @@ export function UseCases() {
                                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent z-10" /> {/* Solid black bottom for max contrast */}
                                     <video
                                         src={item.video}
-                                        autoPlay
+                                        autoPlay={!isMobile}
                                         loop
                                         muted
                                         playsInline
+                                        preload={isMobile ? "none" : "auto"}
                                         className="w-full h-full object-cover"
                                     />
                                 </div>

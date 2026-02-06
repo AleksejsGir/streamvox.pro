@@ -4,6 +4,7 @@ import { Container } from "@/shared/ui/Container";
 import { CheckCircle2, Zap, Shield, Globe2, Layers, Mic2, Layout } from "lucide-react";
 import { Button } from "@/shared/ui/Button";
 import { ArrowRight } from "lucide-react";
+import { useIsMobile } from "@/shared/lib/useIsMobile";
 
 const features = [
     {
@@ -39,6 +40,8 @@ const features = [
 ];
 
 export function Features() {
+    const isMobile = useIsMobile();
+
     return (
         <section className="py-24 relative overflow-hidden">
             {/* Background elements */}
@@ -74,10 +77,11 @@ export function Features() {
                             <div className="absolute inset-0 bg-black/40 z-10" />
                             <video
                                 src="/assets/video/Download_StreamVox.mp4"
-                                autoPlay
+                                autoPlay={!isMobile}
                                 loop
                                 muted
                                 playsInline
+                                preload={isMobile ? "none" : "auto"}
                                 className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-700"
                             />
                         </div>

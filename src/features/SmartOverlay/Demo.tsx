@@ -3,9 +3,11 @@
 import { useState } from "react";
 import { Container } from "@/shared/ui/Container";
 import { Sliders } from "lucide-react";
+import { useIsMobile } from "@/shared/lib/useIsMobile";
 
 export function SmartOverlayDemo() {
     const [opacity, setOpacity] = useState(70);
+    const isMobile = useIsMobile();
 
     return (
         <section className="py-24 overflow-hidden relative">
@@ -51,10 +53,11 @@ export function SmartOverlayDemo() {
                             {/* Fake Background Content */}
                             <video
                                 src="/assets/video/StreamVox_movie.mp4"
-                                autoPlay
+                                autoPlay={!isMobile}
                                 loop
                                 muted
                                 playsInline
+                                preload={isMobile ? "none" : "auto"}
                                 className="absolute inset-0 w-full h-full object-cover opacity-80"
                             />
 
