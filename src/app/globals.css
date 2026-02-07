@@ -71,3 +71,64 @@ body {
 .glow-primary {
   box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
 }
+
+/* Blog Prose Styles */
+.prose {
+  line-height: 1.8;
+}
+
+.prose h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.prose h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-main);
+}
+
+.prose p {
+  margin-bottom: 1.25rem;
+  color: var(--text-muted);
+}
+
+.prose .lead {
+  font-size: 1.25rem;
+  color: var(--text-main);
+  margin-bottom: 2rem;
+}
+
+.prose ul,
+.prose ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+}
+
+.prose strong {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.prose em {
+  font-style: italic;
+}
+
+.prose a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.prose a:hover {
+  color: var(--secondary);
+}

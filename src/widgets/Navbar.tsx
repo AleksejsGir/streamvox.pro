@@ -51,6 +51,7 @@ export function Navbar() {
                 <div className="hidden md:flex items-center gap-8 text-sm font-medium text-text-muted">
                     <Link href="#features" className="hover:text-white transition-colors">Features</Link>
                     <Link href="#faq" className="hover:text-white transition-colors">FAQ</Link>
+                    <Link href="/blog" className="hover:text-white transition-colors">Blog</Link>
                     <Link href="#pricing" className="hover:text-white transition-colors">Pricing</Link>
                 </div>
 
@@ -84,6 +85,7 @@ export function Navbar() {
                             <nav className="flex flex-col gap-4 text-lg font-medium text-center">
                                 <Link href="#features" onClick={() => setMobileMenuOpen(false)} className="text-text-muted hover:text-white py-2">Features</Link>
                                 <Link href="#faq" onClick={() => setMobileMenuOpen(false)} className="text-text-muted hover:text-white py-2">FAQ</Link>
+                                <Link href="/blog" onClick={() => setMobileMenuOpen(false)} className="text-text-muted hover:text-white py-2">Blog</Link>
                                 <Link href="#pricing" onClick={() => setMobileMenuOpen(false)} className="text-text-muted hover:text-white py-2">Pricing</Link>
                             </nav>
                             <div className="flex flex-col gap-4">
