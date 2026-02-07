@@ -50,6 +50,7 @@ export function ShowcaseCarousel() {
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                                     sizes="(max-width: 768px) 300px, 500px"
+                                    loading="lazy"
                                 />
                             </div>
                         ))}

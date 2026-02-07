@@ -1,4 +1,5 @@
 import { Container } from "@/shared/ui/Container";
+import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
@@ -9,9 +10,11 @@ export function Footer() {
             <Container className="grid md:grid-cols-4 gap-8">
                 <div className="space-y-4">
                     <Link href="/" className="inline-block">
-                        <img
+                        <Image
                             src="/assets/Logo/SteramVox_logo.jpg"
                             alt="StreamVox Logo"
+                            width={120}
+                            height={40}
                             className="h-10 w-auto rounded-xl"
                         />
                     </Link>

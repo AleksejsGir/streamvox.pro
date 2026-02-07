@@ -48,9 +48,12 @@ export function LazyVideo({
             videoRef.current.play().catch(() => {
                 // Autoplay blocked, that's ok
             });
-            setHasLoaded(true);
         }
     }, [isVisible, src, hasLoaded]);
+
+    const handleLoadedData = () => {
+        setHasLoaded(true);
+    };
 
     return (
         <video
@@ -60,6 +63,7 @@ export function LazyVideo({
             muted={muted}
             playsInline={playsInline}
             preload="none"
+            onLoadedData={handleLoadedData}
         />
     );
 }

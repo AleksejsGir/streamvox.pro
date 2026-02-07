@@ -2,6 +2,7 @@
 
 import { Container } from "@/shared/ui/Container";
 import { Button } from "@/shared/ui/Button";
+import Image from "next/image";
 import Link from "next/link";
 import { Download } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -40,9 +41,11 @@ export function Navbar() {
         >
             <Container className="flex items-center justify-between relative">
                 <Link href="/" className="relative z-50">
-                    <img
+                    <Image
                         src="/assets/Logo/SteramVox_logo.jpg"
                         alt="StreamVox Logo"
+                        width={120}
+                        height={40}
                         className="h-10 w-auto rounded-xl"
                     />
                 </Link>

@@ -101,7 +101,7 @@ export function Hero() {
                             </div>
                             <div>
                                 <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-0.5">Live Translation</div>
-                                <div className="text-sm font-medium text-white">"Technology that feels like magic."</div>
+                                <div className="text-sm font-medium text-white">&ldquo;Technology that feels like magic.&rdquo;</div>
                             </div>
                         </motion.div>
                     </div>

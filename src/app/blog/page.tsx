@@ -4,7 +4,7 @@ import { Container } from "@/shared/ui/Container";
 import { Navbar } from "@/widgets/Navbar";
 import { Footer } from "@/widgets/Footer";
 import { blogPosts } from "@/shared/data/blogPosts";
-import { ArrowRight, Calendar, Clock, Tag } from "lucide-react";
+import { ArrowRight, Calendar, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "Blog | StreamVox - Real-Time Translation Tips & Guides",
