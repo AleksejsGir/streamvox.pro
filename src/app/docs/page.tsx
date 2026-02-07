@@ -45,6 +45,7 @@ const docSections = [
             { label: "Real-Time Translation", description: "Translates any audio playing on your PC with minimal latency." },
             { label: "Smart Overlay", description: "Floating subtitle window stays on top of games, movies, and apps." },
             { label: "Bidirectional Mode", description: "Translate both system audio and your microphone simultaneously." },
+            { label: "Multilingual Interface", description: "App UI available in 8 languages: English, Spanish, Portuguese, Chinese, Japanese, German, French, Russian." },
             { label: "Privacy Mode", description: "Audio is processed in real-time and never stored on servers." },
         ]
     },

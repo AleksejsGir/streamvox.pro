@@ -34,8 +34,8 @@ const features = [
     },
     {
         icon: Layout,
-        title: "Windows 11 Optimized",
-        desc: "Modern dark-mode interface designed for the latest Windows.",
+        title: "8 UI Languages",
+        desc: "Interface available in English, Spanish, Portuguese, Chinese, Japanese, German, French, Russian.",
     },
 ];
 

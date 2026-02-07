@@ -40,6 +40,10 @@ export const faqData = [
         answer: "StreamVox is optimized for Windows 10 and Windows 11 (64-bit). It features a modern dark-mode interface designed for the latest Windows experience."
     },
     {
+        question: "Is the StreamVox interface available in my language?",
+        answer: "Yes! The StreamVox app interface is available in 8 languages: English, Spanish, Portuguese, Chinese, Japanese, German, French, and Russian. You can switch languages in the app settings."
+    },
+    {
         question: "How does the overlay feature work?",
         answer: "StreamVox displays subtitles in a floating overlay window that stays on top of any application. You can adjust the transparency, position, and size to fit your preferences without blocking your content."
     },

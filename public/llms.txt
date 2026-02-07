@@ -29,6 +29,7 @@ Live on-screen subtitles help people who have difficulty hearing speech. Makes c
 - **Universal Overlay**: Floating subtitle window that stays on top of any app
 - **Bidirectional Translation**: Translates both system audio (what you hear) and microphone (what you say)
 - **10+ Languages**: English, Japanese, Russian, German, Spanish, French, Chinese, Korean, Portuguese, Italian
+- **Multilingual Interface**: App UI available in 8 languages (English, Espanol, Portugues, Chinese, Japanese, Deutsch, Francais, Russian)
 - **Privacy Focused**: Audio processed in real-time, never stored on servers
 - **Dark Mode UI**: Modern interface optimized for Windows 11
 
