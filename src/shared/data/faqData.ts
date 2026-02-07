@@ -9,7 +9,7 @@ export const faqData = [
     },
     {
         question: "Does StreamVox work with Crunchyroll, Netflix, and other streaming services?",
-        answer: "StreamVox works with any video player or streaming service on your Windows PC. It captures system audio and displays translated subtitles in an overlay on top of any app — including Crunchyroll, Netflix, YouTube, Twitch, and more."
+        answer: "StreamVox works with any video player or streaming service on your Windows PC. It captures system audio and displays translated subtitles in an overlay on top of any app - including Crunchyroll, Netflix, YouTube, Twitch, and more."
     },
     {
         question: "What languages does StreamVox support?",

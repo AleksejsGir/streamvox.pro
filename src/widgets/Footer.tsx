@@ -24,8 +24,9 @@ export function Footer() {
                     <h4 className="font-semibold mb-3">Product</h4>
                     <ul className="space-y-2 text-text-muted">
                         <li><Link href="#features" className="hover:text-white transition-colors">Features</Link></li>
-                        <li><Link href="#" className="hover:text-white transition-colors">Download</Link></li>
-                        <li><Link href="#" className="hover:text-white transition-colors">Changelog</Link></li>
+                        <li><a href="https://apps.microsoft.com/detail/9NC10103JH7L" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Download</a></li>
+                        <li><Link href="/blog" className="hover:text-white transition-colors">Blog</Link></li>
+                        <li><Link href="/docs" className="hover:text-white transition-colors">Documentation</Link></li>
                     </ul>
                 </div>
 

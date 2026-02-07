@@ -14,7 +14,7 @@ export const blogPosts: BlogPost[] = [
     {
         slug: "watch-anime-without-subtitles",
         title: "How to Watch Anime Without Waiting for Subtitles",
-        description: "Learn how to enjoy raw anime with real-time AI translation. No more waiting for fansubs — get instant Japanese to English subtitles.",
+        description: "Learn how to enjoy raw anime with real-time AI translation. No more waiting for fansubs - get instant Japanese to English subtitles.",
         date: "2026-02-07",
         author: "StreamVox Team",
         category: "Anime",
@@ -40,6 +40,36 @@ export const blogPosts: BlogPost[] = [
         category: "Mobile",
         readTime: "4 min read",
         keywords: ["phone link", "phone calls", "translation", "mobile", "windows"]
+    },
+    {
+        slug: "japanese-visual-novels-no-translation-patch",
+        title: "Play Japanese Visual Novels Without Translation Patches",
+        description: "Skip the wait for fan translations. Learn how to play untranslated Japanese visual novels with real-time AI subtitles on Windows.",
+        date: "2026-02-07",
+        author: "StreamVox Team",
+        category: "Gaming",
+        readTime: "6 min read",
+        keywords: ["visual novels", "japanese games", "VN translation", "untranslated games", "JRPG"]
+    },
+    {
+        slug: "streamvox-vs-otter-ai-comparison",
+        title: "StreamVox vs Otter.ai: Real-Time Translation Comparison",
+        description: "Detailed comparison of StreamVox and Otter.ai. Which is better for real-time translation vs transcription? We break it down.",
+        date: "2026-02-07",
+        author: "StreamVox Team",
+        category: "Comparison",
+        readTime: "7 min read",
+        keywords: ["StreamVox vs Otter", "comparison", "transcription", "translation", "best AI tool"]
+    },
+    {
+        slug: "best-ai-translation-tools-windows-2026",
+        title: "Best AI Translation Tools for Windows in 2026",
+        description: "Complete guide to the top AI translation apps for Windows. Compare features, pricing, and find the best tool for your needs.",
+        date: "2026-02-07",
+        author: "StreamVox Team",
+        category: "Guide",
+        readTime: "8 min read",
+        keywords: ["AI translation", "Windows apps", "best translation tools", "2026", "comparison"]
     }
 ];
 
