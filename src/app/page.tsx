@@ -4,6 +4,7 @@ import { UseCases } from "@/widgets/UseCases";
 import { Features } from "@/widgets/Features";
 import { SmartOverlayDemo } from "@/features/SmartOverlay/Demo";
 import { Pricing } from "@/widgets/Pricing";
+import { FAQ } from "@/widgets/FAQ";
 import { Footer } from "@/widgets/Footer";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <UseCases />
       <SmartOverlayDemo />
       <Pricing />
+      <FAQ />
       <Footer />
     </main>
   );
