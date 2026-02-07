@@ -1,25 +1,88 @@
 # StreamVox Pro
 
-> The ultimate real-time AI translator for Windows.
+> Real-time AI translator and subtitle generator for Windows.
 
-## Overview
-StreamVox is a Windows application that provides low-latency, real-time subtitles and translation for any audio source on your PC. It works with Zoom, Teams, Discord, movies, and Twitch streams.
+## What is StreamVox?
+
+StreamVox is an AI-powered Windows application that provides instant, real-time translated subtitles for any audio on your PC. It works with video calls, movies, anime, games, phone calls, and streaming content.
+
+## Primary Use Cases
+
+### 1. Calls & Meetings
+Translate live conversations in Zoom, Microsoft Teams, Google Meet, Skype, or Discord. Follow international colleagues in your own language while they speak.
+
+### 2. Anime & Japanese Content
+Watch raw anime, Japanese streams, or any content in Japanese and get real-time translated subtitles. No need to wait for fansubs. Works with Crunchyroll, Netflix, YouTube, and any video player.
+
+### 3. Gaming & Streaming
+Get real-time subtitles for in-game voice chat, Japanese visual novels, and international Twitch streams. Perfect for multiplayer games with voice chat in other languages.
+
+### 4. Mobile Call Translation
+Connect iPhone or Android to Windows via Microsoft Phone Link. See live subtitles for phone calls directly on your PC screen.
+
+### 5. Accessibility
+Live on-screen subtitles help people who have difficulty hearing speech. Makes calls, meetings, and videos easier to follow.
 
 ## Key Features
-- **Real-time Translation**: Instant subtitles for any audio.
-- **Smart Overlay**: Transparent window that floats over games and movies.
-- **Mobile Integration**: Translates phone calls via Microsoft Phone Link.
-- **Privacy Focused**: Transient processing; no audio storage.
-- **Pricing**: Free Starter plan (30 mins/day) and Pro plan ($5.99/month, unlimited).
+
+- **Low Latency AI Translation**: Context-aware real-time translation with minimal delay
+- **Universal Overlay**: Floating subtitle window that stays on top of any app
+- **Bidirectional Translation**: Translates both system audio (what you hear) and microphone (what you say)
+- **10+ Languages**: English, Japanese, Russian, German, Spanish, French, Chinese, Korean, Portuguese, Italian
+- **Privacy Focused**: Audio processed in real-time, never stored on servers
+- **Dark Mode UI**: Modern interface optimized for Windows 11
+
+## Pricing
+
+- **StreamVox Free**: 30 minutes per day, no credit card required
+- **StreamVox Pro**: $5.99/month, unlimited translation time
 
 ## Download
-Official download link: https://apps.microsoft.com/detail/9NC10103JH7L
+
+Microsoft Store: https://apps.microsoft.com/detail/9NC10103JH7L
+Website: https://streamvox.pro
 
 ## Technical Details
-- **OS**: Windows 10, Windows 11
-- **Technology**: Native Windows App + AI Cloud Backend
-- **Developer**: AlekGir
 
-## Support
-Contact: hello@alekgir.com
-Docs: https://streamvox.pro
+- **Platforms**: Windows 10, Windows 11 (64-bit)
+- **Technology**: Native Windows app with AI cloud backend
+- **Developer**: AlekGir (Aleksejs Giruckis)
+
+## Links
+
+- Website: https://streamvox.pro
+- Download: https://apps.microsoft.com/detail/9NC10103JH7L
+- Privacy Policy: https://streamvox.pro/privacy
+- Terms of Service: https://streamvox.pro/terms
+- Contact: hello@alekgir.com
+
+## Target Audiences
+
+- Anime fans who want to watch raw Japanese content
+- Gamers playing Japanese visual novels or games with foreign voice chat
+- Business professionals in international meetings
+- Hard-of-hearing users who need live subtitles
+- Language learners who want real-time translation assistance
+- Content creators watching international streams
+
+## Comparison
+
+StreamVox vs alternatives:
+- Unlike browser extensions, StreamVox works with ANY audio source on Windows
+- Unlike Otter.ai, StreamVox provides real-time translation, not just transcription
+- Unlike Google Translate, StreamVox runs in an overlay without switching apps
+- Unlike waiting for fansubs, StreamVox translates anime instantly
+
+## FAQ
+
+Q: Does StreamVox work with anime?
+A: Yes! Perfect for watching raw anime with real-time Japanese to English subtitles.
+
+Q: Can I use it for Zoom calls?
+A: Yes, works with Zoom, Teams, Discord, and any communication app.
+
+Q: Is my audio stored?
+A: No, audio is processed in real-time and never stored.
+
+Q: What languages are supported?
+A: 10+ languages including Japanese, English, Russian, German, Spanish, French, Chinese, Korean, Portuguese, Italian.
