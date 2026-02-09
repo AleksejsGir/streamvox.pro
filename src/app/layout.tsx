@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "StreamVox - Real-time AI Translator for Windows",
-  description: "Break language barriers instantly. StreamVox provides real-time AI subtitles for calls, meetings, movies, and streams on Windows. Download now.",
-  keywords: ["AI translator", "real-time subtitles", "Windows translator", "speech to text", "live captioning", "StreamVox", "translation app"],
+  title: "StreamVox - Real-Time AI Translator for Windows | Live Subtitles",
+  description: "Real-time AI translator for Windows. Add live subtitles to calls, meetings, anime, and streams. Floating overlay, 10+ languages. Download free.",
+  keywords: ["AI translator", "real-time subtitles", "Windows translator", "speech to text", "live captioning", "StreamVox", "translation app", "anime subtitles", "meeting translator"],
   authors: [{ name: "AlekGir", url: "https://streamvox.pro" }],
   openGraph: {
     title: "StreamVox - Real-time AI Translator for Windows",

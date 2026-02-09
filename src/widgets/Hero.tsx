@@ -40,15 +40,15 @@ export function Hero() {
                     </div>
 
                     <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight">
-                        Break Language <br />
-                        <span className="text-gradient">Barriers Instantly</span>
+                        Break Language Barriers <br />
+                        <span className="text-gradient">with Real-Time AI Translation</span>
                     </h1>
 
                     <p className="text-xl text-text-muted max-w-lg">
-                        Real-Time AI Translator for Windows. Live subtitles for calls, meetings, streams, and mobile calls in seconds.
+                        StreamVox for Windows — Live subtitles for calls, meetings, anime, and streams in 10+ languages.
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                    <div className="flex flex-col sm:flex-row gap-4 pt-4 items-center sm:items-start">
                         <a href="https://apps.microsoft.com/detail/9NC10103JH7L" target="_blank" rel="noopener noreferrer">
                             <Button size="lg" className="group">
                                 <Download className="mr-2 h-5 w-5" />
