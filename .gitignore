@@ -48,3 +48,6 @@ yarn-error.log*
 # Agent files
 .agent/
 lighthouse-report.json
+
+# Internal docs
+docs/
