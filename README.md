@@ -1,78 +1,154 @@
-# StreamVox.pro - Real-Time AI Translator for Windows
+# StreamVox — Real-Time AI Translator for Windows
 
-![StreamVox App Showcase](/public/assets/showcase/StreamVox_main.png)
+<div align="center">
 
-> **Break Language Barriers Instantly.**
-> Live subtitles for calls, meetings, streams, and mobile conversations in seconds.
+![StreamVox Banner](/public/assets/showcase/StreamVox_main.png)
 
-## 🚀 Overview
+**Break Language Barriers Instantly**
 
-**StreamVox** is a next-generation AI translation tool designed specifically for Windows 10 & 11. It provides real-time, low-latency subtitles for any audio source on your PC—whether it's a Zoom meeting, a Twitch stream, a movie, or even a phone call via Microsoft Phone Link.
+*Live subtitles for calls, meetings, anime, games, and mobile conversations*
 
-Built with performance and aesthetics in mind, StreamVox floats seamlessly over your content, offering a "magic" translation layer that feels native to your OS.
+[![Download on Microsoft Store](https://img.shields.io/badge/Download-Microsoft%20Store-blue?style=for-the-badge&logo=microsoft)](https://apps.microsoft.com/detail/9NC10103JH7L)
+[![Website](https://img.shields.io/badge/Website-streamvox.pro-purple?style=for-the-badge)](https://streamvox.pro)
+[![Windows 10/11](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D6?style=for-the-badge&logo=windows)](https://apps.microsoft.com/detail/9NC10103JH7L)
 
-## ✨ Key Features
-
-- **🎙️ Calls & Meetings**: Instant subtitles for Zoom, Teams, Discord, and Skype.
-- **📱 Mobile Translation**: Connect iOS/Android via Phone Link and get subtitles for phone calls on your desktop.
-- **🎬 Smart Overlay**: A transparent, "invisible" window mode that sits on top of movies or games without blocking the view.
-- **⚡ Low Latency AI**: Ultra-fast transcription and translation powered by advanced speech-to-text models.
-- **🎨 Windows 11 Design**: Sleek, dark-mode interface with glassmorphism effects that matches the modern Windows aesthetic.
-- **🔒 Privacy First**: All audio processing is handled securely; we prioritize user privacy.
-
-## 🛠️ Tech Stack
-
-This website and landing page are built using modern web technologies to ensure speed, SEO optimization, and a premium user experience.
-
-- **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Architecture**: Feature-Sliced Design (FSD)
-- **Icons**: [Lucide React](https://lucide.dev/)
-
-## 📂 Project Structure
-
-The project follows the **Feature-Sliced Design (FSD)** methodology for scalability and maintainability:
-
-```text
-src/
-├── app/           # Next.js App Router (Pages & Layouts)
-├── feature/       # Business logic (e.g., Smart Overlay Demo)
-├── widgets/       # Large UI blocks (Hero, Navbar, Features)
-├── shared/        # Reusable components & utilities (UI Kit)
-└── assets/        # Static media files
-```
-
-## 🚀 Getting Started
-
-To run this project locally:
-
-1.  **Clone the repository**:
-    ```bash
-    git clone https://github.com/your-username/streamvox.pro.git
-    cd streamvox.pro
-    ```
-
-2.  **Install dependencies**:
-    ```bash
-    npm install
-    # or
-    yarn install
-    ```
-
-3.  **Run the development server**:
-    ```bash
-    npm run dev
-    ```
-
-4.  Open [http://localhost:3000](http://localhost:3000) with your browser.
-
-## 📥 Download
-
-StreamVox is available exclusively on the Microsoft Store.
-
-[**Download for Windows**](https://apps.microsoft.com/detail/9NC10103JH7L)
+</div>
 
 ---
 
-© 2026 AlekGir. All rights reserved.
+## 🎯 What is StreamVox?
+
+**StreamVox** is an AI-powered real-time translation app for Windows that adds live subtitles to any audio on your PC. Whether you're watching anime, joining international meetings, gaming with foreign teammates, or taking phone calls — StreamVox translates speech instantly.
+
+### Perfect for:
+- 🎌 **Anime fans** — Watch raw anime without waiting for fansubs
+- 🎮 **Gamers** — Translate Japanese visual novels & voice chat
+- 💼 **Remote workers** — Understand colleagues in international meetings
+- 📱 **Phone users** — Get subtitles for mobile calls via Phone Link
+- ♿ **Accessibility** — Live captions for hard-of-hearing users
+
+---
+
+## ✨ Key Features
+
+| Feature | Description |
+|---------|-------------|
+| **🎙️ Calls & Meetings** | Real-time subtitles for Zoom, Teams, Discord, Skype, Google Meet |
+| **📱 Mobile Translation** | Connect iPhone/Android via Phone Link for call subtitles |
+| **🎬 Smart Overlay** | Transparent window floats over movies, streams, and games |
+| **⚡ Low Latency AI** | Ultra-fast speech-to-text powered by Deepgram & Google AI |
+| **🌍 10+ Languages** | English, Japanese, Russian, Spanish, German, French, Chinese, Korean, Portuguese, Italian |
+| **🎨 Windows 11 Design** | Beautiful dark-mode UI with glassmorphism effects |
+| **🔒 Privacy First** | Audio processed in real-time, never stored on servers |
+
+---
+
+## 🖥️ Screenshots
+
+<div align="center">
+
+| Interface | Features |
+|:---------:|:--------:|
+| ![Main](/public/assets/showcase/StreamVox_main.png) | ![Features](/public/assets/showcase/Presentation_2.png) |
+
+</div>
+
+---
+
+## 💰 Pricing
+
+| Plan | Price | Features |
+|------|-------|----------|
+| **Free** | $0 | 30 min/day translation |
+| **Pro** | $5.99/mo | Unlimited translation |
+
+---
+
+## 📥 Download
+
+StreamVox is available exclusively on the **Microsoft Store** for Windows 10 & 11.
+
+<div align="center">
+
+[![Get it from Microsoft Store](https://get.microsoft.com/images/en-us%20dark.svg)](https://apps.microsoft.com/detail/9NC10103JH7L)
+
+</div>
+
+---
+
+## 🌐 Supported Languages
+
+| Input (Speech) | Output (Translation) |
+|----------------|----------------------|
+| English 🇺🇸 | English 🇺🇸 |
+| Japanese 🇯🇵 | Japanese 🇯🇵 |
+| Russian 🇷🇺 | Russian 🇷🇺 |
+| German 🇩🇪 | German 🇩🇪 |
+| Spanish 🇪🇸 | Spanish 🇪🇸 |
+| French 🇫🇷 | French 🇫🇷 |
+| Chinese 🇨🇳 | Chinese 🇨🇳 |
+| Korean 🇰🇷 | Korean 🇰🇷 |
+| Portuguese 🇧🇷 | Portuguese 🇧🇷 |
+| Italian 🇮🇹 | Italian 🇮🇹 |
+
+---
+
+## ❓ FAQ
+
+<details>
+<summary><strong>Does StreamVox work with Netflix and Crunchyroll?</strong></summary>
+
+Yes! StreamVox captures system audio and displays subtitles over any app — including Netflix, Crunchyroll, YouTube, Twitch, and any streaming service.
+</details>
+
+<details>
+<summary><strong>Can I use StreamVox for gaming?</strong></summary>
+
+Absolutely! Gamers use StreamVox for:
+- Japanese visual novels without fan translations
+- In-game voice chat translation
+- Twitch streams in foreign languages
+</details>
+
+<details>
+<summary><strong>Is my audio data stored?</strong></summary>
+
+No. StreamVox is privacy-focused. Audio is processed in real-time and never stored on any servers.
+</details>
+
+<details>
+<summary><strong>What are the system requirements?</strong></summary>
+
+- Windows 10 or Windows 11 (64-bit)
+- Internet connection for AI translation
+- Works on any modern PC
+</details>
+
+---
+
+## 📚 Resources
+
+- 🌐 **Website**: [streamvox.pro](https://streamvox.pro)
+- 📖 **Documentation**: [streamvox.pro/docs](https://streamvox.pro/docs)
+- 📝 **Blog**: [streamvox.pro/blog](https://streamvox.pro/blog)
+- 💬 **Support**: hello@alekgir.com
+
+---
+
+## 🛠️ About This Repository
+
+This is the official website for StreamVox, built with:
+- [Next.js 15](https://nextjs.org/) + TypeScript
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- Deployed on [Vercel](https://vercel.com)
+
+---
+
+<div align="center">
+
+**Made with ❤️ by [AlekGir](https://alekgir.com)**
+
+© 2026 StreamVox. All rights reserved.
+
+</div>
