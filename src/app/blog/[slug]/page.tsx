@@ -10,6 +10,71 @@ import { Button } from "@/shared/ui/Button";
 
 // Article content stored here for simplicity
 const articleContent: Record<string, React.ReactNode> = {
+    "streamvox-certified-microsoft-store": (
+        <div className="prose prose-invert prose-lg max-w-none">
+            <p className="lead">
+                Big news - StreamVox just received official Microsoft Store certification for the Pro version! You can now upgrade directly inside the app.
+            </p>
+
+            <h2>Microsoft Store Certification</h2>
+            <p>
+                We&apos;re excited to announce that StreamVox Pro has passed Microsoft&apos;s rigorous certification process. This ensures the app meets high standards for security, performance, and reliability.
+            </p>
+            <p>
+                To see the new options, make sure you have the latest version installed. The Microsoft Store usually updates apps automatically, but you can force an update:
+            </p>
+            <ol>
+                <li>Open <strong>Microsoft Store</strong></li>
+                <li>Go to <strong>Library</strong> (bottom left)</li>
+                <li>Click <strong>Get updates</strong></li>
+            </ol>
+
+            <h2>What&apos;s Included in Pro?</h2>
+            <p>
+                Upgrading to StreamVox Pro unlocks the full potential of the app:
+            </p>
+            <ul>
+                <li><strong>Unlimited Translation</strong>: No more 30-minute daily limit. Translate as much as you want.</li>
+                <li><strong>Priority Support</strong>: Get faster responses to your questions and issues.</li>
+                <li><strong>Early Access</strong>: Be the first to try new features before they release to everyone.</li>
+            </ul>
+
+            <div className="bg-white/5 p-6 rounded-xl border border-white/10 my-8">
+                <h3 className="text-xl font-bold mb-2 !mt-0">Pro Pricing</h3>
+                <p className="text-3xl font-bold text-primary mb-2">$5.99<span className="text-lg text-text-muted font-normal">/month</span></p>
+                <p className="text-sm text-text-muted mb-4">Cancel anytime directly from the Microsoft Store.</p>
+                <p><strong>How to Upgrade:</strong> Open StreamVox → Click "Upgrade to Pro"</p>
+            </div>
+
+            <h2>What&apos;s Coming Next?</h2>
+            <p>
+                Your subscription directly supports development instantly. Here is what I am working on right now:
+            </p>
+
+            <h3>🔜 Per-Application Audio Filtering</h3>
+            <p>
+                This is the most requested feature! Soon, you&apos;ll be able to tell StreamVox to listen <strong>only</strong> to specific apps like Discord, Chrome, or a game - and ignore everything else.
+            </p>
+            <p>
+                This means you can listen to music on Spotify while translating a meeting on Teams, without the music lyrics messing up the translation. No more background noise interference!
+            </p>
+
+            <h3>We Want Your Feedback</h3>
+            <p>
+                StreamVox is built for you. If you have ideas, feature requests, or spot any bugs, please let us know. Every message helps shape the future of the app.
+            </p>
+            <p>
+                And don&apos;t worry - the <strong>Free Tier</strong> isn&apos;t going anywhere. It will always remain available for everyone.
+            </p>
+
+            <p>
+                Thank you for being one of the first users of StreamVox!
+            </p>
+            <p>
+                <em>AlekGir🫶</em>
+            </p>
+        </div>
+    ),
     "watch-anime-without-subtitles": (
         <div className="prose prose-invert prose-lg max-w-none">
             <p className="lead">

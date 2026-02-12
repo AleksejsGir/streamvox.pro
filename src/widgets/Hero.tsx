@@ -36,7 +36,7 @@ export function Hero() {
                 >
                     <div className="inline-flex items-center px-3 py-1 rounded-full border border-white/10 bg-white/5 text-sm text-primary mb-4">
                         <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse"></span>
-                        v1.1.0 Now Available
+                        v1.3.0 Now Available
                     </div>
 
                     <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight">
@@ -45,7 +45,7 @@ export function Hero() {
                     </h1>
 
                     <p className="text-xl text-text-muted max-w-lg">
-                        StreamVox for Windows — Live subtitles for calls, meetings, anime, and streams in 10+ languages.
+                        StreamVox for Windows - Live subtitles for calls, meetings, anime, and streams in 10+ languages.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 items-center sm:items-start">

@@ -12,6 +12,16 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
+        slug: "streamvox-certified-microsoft-store",
+        title: "StreamVox Pro Certified by Microsoft & New Features",
+        description: "Big news! StreamVox Pro is now officially certified on the Microsoft Store. Learn about the new features, pricing, and what's coming next.",
+        date: "2026-02-12",
+        author: "AlekGir",
+        category: "News",
+        readTime: "2 min read",
+        keywords: ["Microsoft Store", "certification", "StreamVox Pro", "update", "roadmap"]
+    },
+    {
         slug: "watch-anime-without-subtitles",
         title: "How to Watch Anime Without Waiting for Subtitles",
         description: "Learn how to enjoy raw anime with real-time AI translation. No more waiting for fansubs - get instant Japanese to English subtitles.",
