@@ -4,8 +4,10 @@ import { useState } from "react";
 import { Container } from "@/shared/ui/Container";
 import { Sliders } from "lucide-react";
 import { LazyVideo } from "@/shared/ui/LazyVideo";
+import { useTranslations } from "next-intl";
 
 export function SmartOverlayDemo() {
+    const t = useTranslations("SmartOverlay");
     const [opacity, setOpacity] = useState(70);
 
     return (
@@ -15,19 +17,18 @@ export function SmartOverlayDemo() {
                 <div className="grid lg:grid-cols-12 gap-12 items-center">
                     <div className="order-2 lg:order-1 lg:col-span-4 space-y-8">
                         <h2 className="text-3xl md:text-5xl font-bold">
-                            The &quot;Invisible&quot; <br />
-                            <span className="text-gradient">Smart Overlay</span>
+                            {t("title")} <br />
+                            <span className="text-gradient">{t("titleGradient")}</span>
                         </h2>
                         <p className="text-text-muted text-lg">
-                            StreamVox floats above your content. Adjust the transparency to keep subtitles visible without blocking your view.
-                            Perfect for movies and gaming.
+                            {t("description")}
                         </p>
 
                         <div className="bg-white/5 p-6 rounded-2xl border border-white/10 backdrop-blur-sm">
                             <div className="flex justify-between mb-4">
                                 <label className="flex items-center gap-2 font-medium">
                                     <Sliders className="w-4 h-4 text-primary" />
-                                    Overlay Opacity
+                                    {t("opacityLabel")}
                                 </label>
                                 <span className="text-primary font-mono">{opacity}%</span>
                             </div>
@@ -38,10 +39,10 @@ export function SmartOverlayDemo() {
                                 value={opacity}
                                 onChange={(e) => setOpacity(Number(e.target.value))}
                                 className="w-full h-2 bg-white/10 rounded-lg appearance-none cursor-pointer accent-primary hover:accent-secondary transition-colors"
-                                aria-label="Overlay Opacity"
+                                aria-label={t("opacityLabel")}
                             />
                             <p className="text-xs text-text-muted mt-3">
-                                Drag the slider to test the transparency effect on the preview.
+                                {t("sliderHint")}
                             </p>
                         </div>
                     </div>
@@ -65,12 +66,12 @@ export function SmartOverlayDemo() {
                             >
                                 <div className="flex items-center gap-2 mb-2">
                                     <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-                                    <span className="text-xs uppercase tracking-wider text-primary font-bold">Live Translation</span>
+                                    <span className="text-xs uppercase tracking-wider text-primary font-bold">{t("liveTranslation")}</span>
                                 </div>
                                 <p className="text-base md:text-xl font-medium text-white leading-relaxed">
-                                    &quot;This is how the overlay looks on your screen. You decide how visible the background should be.&quot;
+                                    &quot;{t("overlayQuote")}&quot;
                                 </p>
-                                <p className="text-sm text-gray-400 mt-1">original: &quot;C&apos;est à cela que ressemble la superposition sur votre écran.&quot;</p>
+                                <p className="text-sm text-gray-400 mt-1">{t("overlayOriginal")}</p>
                             </div>
                         </div>
                     </div>

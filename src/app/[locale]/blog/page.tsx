@@ -1,24 +1,42 @@
 import { Metadata } from "next";
-import Link from "next/link";
 import { Container } from "@/shared/ui/Container";
 import { Navbar } from "@/widgets/Navbar";
 import { Footer } from "@/widgets/Footer";
 import { blogPosts } from "@/shared/data/blogPosts";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
+import { setRequestLocale } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 
-export const metadata: Metadata = {
-    title: "Blog | StreamVox - Real-Time Translation Tips & Guides",
-    description: "Learn how to use real-time translation for anime, gaming, meetings, and more. Tips, tutorials, and guides for StreamVox users.",
-    keywords: ["StreamVox blog", "translation tips", "anime subtitles", "real-time translation guide"],
-    openGraph: {
-        title: "StreamVox Blog - Real-Time Translation Tips & Guides",
-        description: "Learn how to use real-time translation for anime, gaming, meetings, and more.",
-        url: "https://streamvox.pro/blog",
-        type: "website",
-    },
-};
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: "Blog" });
+    return {
+        title: `${t("title")} ${t("titleGradient")} | StreamVox`,
+        description: t("subtitle"),
+        keywords: ["StreamVox blog", "translation tips", "anime subtitles", "real-time translation guide"],
+        openGraph: {
+            title: `StreamVox ${t("titleGradient")}`,
+            description: t("subtitle"),
+            url: `https://streamvox.pro/${locale}/blog`,
+            type: "website",
+        },
+    };
+}
 
-export default function BlogPage() {
+export default async function BlogPage({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+    const t = await getTranslations("Blog");
+
     return (
         <main className="min-h-screen bg-background">
             <Navbar />
@@ -27,10 +45,10 @@ export default function BlogPage() {
                 <Container>
                     <div className="text-center max-w-2xl mx-auto mb-16">
                         <h1 className="text-4xl md:text-6xl font-bold mb-4">
-                            StreamVox <span className="text-gradient">Blog</span>
+                            {t("title")} <span className="text-gradient">{t("titleGradient")}</span>
                         </h1>
                         <p className="text-text-muted text-lg">
-                            Tips, tutorials, and guides for real-time translation
+                            {t("subtitle")}
                         </p>
                     </div>
 
@@ -71,7 +89,7 @@ export default function BlogPage() {
                                                 })}
                                             </span>
                                             <span className="flex items-center gap-1 text-primary font-medium group-hover:gap-2 transition-all">
-                                                Read more
+                                                {t("readMore")}
                                                 <ArrowRight className="w-4 h-4" />
                                             </span>
                                         </div>

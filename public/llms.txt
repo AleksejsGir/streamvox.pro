@@ -42,6 +42,7 @@ Live on-screen subtitles help people who have difficulty hearing speech. Makes c
 
 Microsoft Store: https://apps.microsoft.com/detail/9NC10103JH7L
 Website: https://streamvox.pro
+Version: 1.4.0
 
 ## Technical Details
 

@@ -5,41 +5,40 @@ import { Zap, Shield, Globe2, Layers, Mic2, Layout } from "lucide-react";
 import { Button } from "@/shared/ui/Button";
 import { ArrowRight } from "lucide-react";
 import { LazyVideo } from "@/shared/ui/LazyVideo";
+import { useTranslations } from "next-intl";
 
-const features = [
-    {
-        icon: Zap,
-        title: "Low Latency AI",
-        desc: "Real-time translation with context-aware results.",
-    },
-    {
-        icon: Layers,
-        title: "Universal Overlay",
-        desc: "Floating subtitle window that stays on top of any app.",
-    },
-    {
-        icon: Mic2,
-        title: "Bidirectional",
-        desc: "Translates both System Audio (what you hear) and Microphone (what you say).",
-    },
-    {
-        icon: Globe2,
-        title: "10+ Languages",
-        desc: "English, Russian, German, Spanish, French, Chinese, Japanese, Korean, Portuguese, Italian.",
-    },
-    {
-        icon: Shield,
-        title: "Privacy Focused",
-        desc: "Audio is processed in real-time and never stored.",
-    },
-    {
-        icon: Layout,
-        title: "8 UI Languages",
-        desc: "Interface available in English, Spanish, Portuguese, Chinese, Japanese, German, French, Russian.",
-    },
-];
+
 
 export function Features() {
+    const t = useTranslations("Features");
+
+    const features = [
+        {
+            icon: Zap,
+            id: "lowLatency",
+        },
+        {
+            icon: Layers,
+            id: "overlay",
+        },
+        {
+            icon: Mic2,
+            id: "bidirectional",
+        },
+        {
+            icon: Globe2,
+            id: "languages",
+        },
+        {
+            icon: Shield,
+            id: "privacy",
+        },
+        {
+            icon: Layout,
+            id: "uiLanguages",
+        },
+    ];
+
     return (
         <section className="py-24 relative overflow-hidden">
             {/* Background elements */}
@@ -51,8 +50,8 @@ export function Features() {
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     <div>
                         <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                            Powering Global <br />
-                            <span className="text-gradient">Communication</span>
+                            {t("title")} <br />
+                            <span className="text-gradient">{t("titleGradient")}</span>
                         </h2>
                         <ul className="space-y-6">
                             {features.map((feature, idx) => (
@@ -61,8 +60,8 @@ export function Features() {
                                         <feature.icon className="w-5 h-5" />
                                     </div>
                                     <div>
-                                        <h3 className="font-semibold text-lg">{feature.title}</h3>
-                                        <p className="text-text-muted">{feature.desc}</p>
+                                        <h3 className="font-semibold text-lg">{t(feature.id)}</h3>
+                                        <p className="text-text-muted">{t(`${feature.id}Desc`)}</p>
                                     </div>
                                 </li>
                             ))}
@@ -80,18 +79,18 @@ export function Features() {
                         </div>
 
                         <div className="relative z-10 p-8">
-                            <h3 className="text-2xl font-bold">Start Breaking Barriers</h3>
+                            <h3 className="text-2xl font-bold">{t("ctaTitle")}</h3>
                             <p className="text-text-muted group-hover:text-white/90 transition-colors">
-                                Download StreamVox today and see live subtitles for everything on your PC.
+                                {t("ctaDesc")}
                             </p>
                             <a href="https://apps.microsoft.com/detail/9NC10103JH7L" target="_blank" rel="noopener noreferrer">
                                 <Button size="lg" className="w-full sm:w-auto mt-6">
-                                    Download on Microsoft Store
+                                    {t("ctaBtn")}
                                     <ArrowRight className="ml-2 h-4 w-4" />
                                 </Button>
                             </a>
                             <p className="text-xs text-text-muted mt-4">
-                                Supports Windows 10 & 11 (64-bit)
+                                {t("ctaNote")}
                             </p>
                         </div>
                     </div>

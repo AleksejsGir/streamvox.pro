@@ -9,8 +9,10 @@ import { ShowcaseCarousel } from "@/features/Showcase/Carousel";
 
 import { useState } from "react";
 import { VideoModal } from "@/shared/ui/VideoModal";
+import { useTranslations } from "next-intl";
 
 export function Hero() {
+    const t = useTranslations("Hero");
     const [isDemoOpen, setIsDemoOpen] = useState(false);
 
     return (
@@ -36,28 +38,28 @@ export function Hero() {
                 >
                     <div className="inline-flex items-center px-3 py-1 rounded-full border border-white/10 bg-white/5 text-sm text-primary mb-4">
                         <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse"></span>
-                        v1.3.0 Now Available
+                        {t("badge")}
                     </div>
 
                     <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight">
-                        Break Language Barriers <br />
-                        <span className="text-gradient">with Real-Time AI Translation</span>
+                        {t("title")} <br />
+                        <span className="text-gradient">{t("titleGradient")}</span>
                     </h1>
 
                     <p className="text-xl text-text-muted max-w-lg">
-                        StreamVox for Windows - Live subtitles for calls, meetings, anime, and streams in 10+ languages.
+                        {t("description")}
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 items-center sm:items-start">
                         <a href="https://apps.microsoft.com/detail/9NC10103JH7L" target="_blank" rel="noopener noreferrer">
                             <Button size="lg" className="group">
                                 <Download className="mr-2 h-5 w-5" />
-                                Download on MS Store
+                                {t("downloadBtn")}
                                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                             </Button>
                         </a>
                         <Button size="lg" variant="secondary" onClick={() => setIsDemoOpen(true)}>
-                            Watch Demo
+                            {t("demoBtn")}
                         </Button>
                     </div>
                 </motion.div>
@@ -100,8 +102,8 @@ export function Hero() {
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><line x1="12" x2="12" y1="19" y2="22" /><line x1="8" x2="16" y1="22" y2="22" /></svg>
                             </div>
                             <div>
-                                <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-0.5">Live Translation</div>
-                                <div className="text-sm font-medium text-white">&ldquo;Technology that feels like magic.&rdquo;</div>
+                                <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-0.5">{t("liveTranslation")}</div>
+                                <div className="text-sm font-medium text-white">&ldquo;{t("quote")}&rdquo;</div>
                             </div>
                         </motion.div>
                     </div>

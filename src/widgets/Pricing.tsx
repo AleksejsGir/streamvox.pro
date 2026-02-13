@@ -3,9 +3,11 @@
 import { Container } from "@/shared/ui/Container";
 import { Button } from "@/shared/ui/Button";
 import { Check } from "lucide-react";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 export function Pricing() {
+    const t = useTranslations("Pricing");
     return (
         <section id="pricing" className="py-24 relative overflow-hidden">
             {/* Background Gradients */}
@@ -15,9 +17,9 @@ export function Pricing() {
 
             <Container className="relative z-10">
                 <div className="text-center max-w-2xl mx-auto mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold mb-4">Pricing</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold mb-4">{t("title")}</h2>
                     <p className="text-text-muted text-lg">
-                        Simple, transparent pricing for StreamVox Pro.
+                        {t("subtitle")}
                     </p>
                 </div>
 
@@ -25,34 +27,34 @@ export function Pricing() {
                     {/* Free Starter */}
                     <div className="relative p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm flex flex-col">
                         <div className="mb-6">
-                            <h3 className="text-xl font-bold mb-2">Free Starter</h3>
+                            <h3 className="text-xl font-bold mb-2">{t("freeTitle")}</h3>
                             <div className="flex items-baseline gap-1">
-                                <span className="text-4xl font-bold">$0</span>
-                                <span className="text-text-muted">/forever</span>
+                                <span className="text-4xl font-bold">{t("freePrice")}</span>
+                                <span className="text-text-muted">{t("freePeriod")}</span>
                             </div>
                             <p className="text-sm text-text-muted mt-4">
-                                Experience the magic of real-time translation with daily free access.
+                                {t("freeDesc")}
                             </p>
                         </div>
 
                         <ul className="space-y-4 mb-8 flex-grow">
                             <li className="flex items-center gap-3">
                                 <Check className="w-5 h-5 text-primary" />
-                                <span className="text-sm">30 minutes free usage every 24 hours</span>
+                                <span className="text-sm">{t("freeFeat1")}</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Check className="w-5 h-5 text-primary" />
-                                <span className="text-sm">Access to Standard Models</span>
+                                <span className="text-sm">{t("freeFeat2")}</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Check className="w-5 h-5 text-primary" />
-                                <span className="text-sm">Community Support</span>
+                                <span className="text-sm">{t("freeFeat3")}</span>
                             </li>
                         </ul>
 
                         <a href="https://apps.microsoft.com/detail/9NC10103JH7L" target="_blank" rel="noopener noreferrer">
                             <Button variant="outline" className="w-full bg-transparent hover:bg-white/5 border-white/20">
-                                Download Free Version
+                                {t("freeBtn")}
                             </Button>
                         </a>
                     </div>
@@ -60,69 +62,70 @@ export function Pricing() {
                     {/* StreamVox Pro */}
                     <div className="relative p-8 rounded-3xl bg-black/40 border border-primary/50 shadow-[0_0_30px_-10px_rgba(6,182,212,0.3)] flex flex-col">
                         {/* Recommended Badge */}
+                        {/* Recommended Badge */}
                         <div className="absolute top-0 right-0 bg-primary text-black text-xs font-bold px-3 py-1 rounded-bl-xl rounded-tr-2xl">
-                            RECOMMENDED
+                            {t("recommended")}
                         </div>
 
                         <div className="mb-6">
-                            <h3 className="text-xl font-bold mb-2">StreamVox Pro</h3>
+                            <h3 className="text-xl font-bold mb-2">{t("proTitle")}</h3>
                             <div className="flex items-baseline gap-1">
-                                <span className="text-4xl font-bold text-primary">$5.99</span>
-                                <span className="text-text-muted">/month</span>
+                                <span className="text-4xl font-bold text-primary">{t("proPrice")}</span>
+                                <span className="text-text-muted">{t("proPeriod")}</span>
                             </div>
                             <p className="text-sm text-text-muted mt-4">
-                                Unlock the full power of real-time AI translation for your Windows desktop.
+                                {t("proDesc")}
                             </p>
                         </div>
 
                         <ul className="space-y-4 mb-8 flex-grow">
                             <li className="flex items-center gap-3">
                                 <Check className="w-5 h-5 text-primary" />
-                                <span className="text-sm">Unlimited Translation Time</span>
+                                <span className="text-sm">{t("proFeat1")}</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Check className="w-5 h-5 text-primary" />
-                                <span className="text-sm">Access to Premium AI Models</span>
+                                <span className="text-sm">{t("proFeat2")}</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Check className="w-5 h-5 text-primary" />
-                                <span className="text-sm">Priority Support</span>
+                                <span className="text-sm">{t("proFeat3")}</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Check className="w-5 h-5 text-primary" />
-                                <span className="text-sm">Early Access to New Features</span>
+                                <span className="text-sm">{t("proFeat4")}</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Check className="w-5 h-5 text-primary" />
-                                <span className="text-sm">No Watermark on Overlay</span>
+                                <span className="text-sm">{t("proFeat5")}</span>
                             </li>
                         </ul>
 
                         <div className="space-y-3">
                             <a href="https://apps.microsoft.com/detail/9NC10103JH7L" target="_blank" rel="noopener noreferrer">
                                 <Button className="w-full">
-                                    Subscribe via Microsoft Store
+                                    {t("proBtn")}
                                 </Button>
                             </a>
                             <Button variant="outline" className="w-full border-white/20 hover:bg-white/5" disabled>
-                                Subscribe via Web (Coming Soon)
+                                {t("proBtnWeb")}
                             </Button>
                         </div>
                         <p className="text-xs text-text-muted text-center mt-4">
-                            14-day money-back guarantee. No questions asked.
+                            {t("proGuarantee")}
                         </p>
                     </div>
                 </div>
 
                 <div className="text-center mt-12 text-sm text-text-muted">
                     <p>
-                        Have questions? Check our{" "}
+                        {t("footerText")}{" "}
                         <Link href="/terms" className="text-white hover:underline underline-offset-4">
-                            Terms of Service
+                            {t("termsLink")}
                         </Link>{" "}
-                        or{" "}
+                        {t("or")}{" "}
                         <Link href="/refund-policy" className="text-white hover:underline underline-offset-4">
-                            Refund Policy
+                            {t("refundLink")}
                         </Link>
                         .
                     </p>

@@ -1,8 +1,10 @@
 import { Container } from "@/shared/ui/Container";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 export function Footer() {
+    const t = useTranslations("Footer");
     const currentYear = new Date().getFullYear();
 
     return (
@@ -19,40 +21,40 @@ export function Footer() {
                         />
                     </Link>
                     <p className="text-text-muted">
-                        The next-generation real-time AI translator for Windows.
+                        {t("description")}
                     </p>
                 </div>
 
                 <div>
-                    <h4 className="font-semibold mb-3">Product</h4>
+                    <h4 className="font-semibold mb-3">{t("product")}</h4>
                     <ul className="space-y-2 text-text-muted">
-                        <li><Link href="#features" className="hover:text-white transition-colors">Features</Link></li>
-                        <li><a href="https://apps.microsoft.com/detail/9NC10103JH7L" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Download</a></li>
-                        <li><Link href="/blog" className="hover:text-white transition-colors">Blog</Link></li>
-                        <li><Link href="/docs" className="hover:text-white transition-colors">Documentation</Link></li>
+                        <li><Link href="#features" className="hover:text-white transition-colors">{t("features")}</Link></li>
+                        <li><a href="https://apps.microsoft.com/detail/9NC10103JH7L" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">{t("download")}</a></li>
+                        <li><Link href="/blog" className="hover:text-white transition-colors">{t("blog")}</Link></li>
+                        <li><Link href="/docs" className="hover:text-white transition-colors">{t("documentation")}</Link></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 className="font-semibold mb-3">Legal</h4>
+                    <h4 className="font-semibold mb-3">{t("legal")}</h4>
                     <ul className="space-y-2 text-text-muted">
-                        <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
-                        <li><Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link></li>
-                        <li><Link href="/refund-policy" className="hover:text-white transition-colors">Refund Policy</Link></li>
+                        <li><Link href="/privacy" className="hover:text-white transition-colors">{t("privacyPolicy")}</Link></li>
+                        <li><Link href="/terms" className="hover:text-white transition-colors">{t("termsOfService")}</Link></li>
+                        <li><Link href="/refund-policy" className="hover:text-white transition-colors">{t("refundPolicy")}</Link></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 className="font-semibold mb-3">Connect</h4>
+                    <h4 className="font-semibold mb-3">{t("connect")}</h4>
                     <ul className="space-y-2 text-text-muted">
-                        <li><a href="mailto:hello@alekgir.com" className="hover:text-white transition-colors">Support</a></li>
-                        <li><a href="https://twitter.com/alekgir" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Twitter</a></li>
+                        <li><a href="mailto:hello@alekgir.com" className="hover:text-white transition-colors">{t("support")}</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=61586199129069" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Facebook</a></li>
                     </ul>
                 </div>
             </Container>
 
             <Container className="mt-12 pt-8 border-t border-white/5 text-center text-text-muted">
-                <p>© {currentYear} AlekGir. All rights reserved.</p>
+                <p>© {currentYear} {t("rights")}</p>
             </Container>
         </footer>
     );

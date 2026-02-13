@@ -1,15 +1,6 @@
-import { Metadata } from "next";
-import { notFound } from "next/navigation";
-import Link from "next/link";
-import { Container } from "@/shared/ui/Container";
-import { Navbar } from "@/widgets/Navbar";
-import { Footer } from "@/widgets/Footer";
-import { blogPosts, getBlogPost } from "@/shared/data/blogPosts";
-import { ArrowLeft, Calendar, Clock, User, Tag } from "lucide-react";
-import { Button } from "@/shared/ui/Button";
+import React from "react";
 
-// Article content stored here for simplicity
-const articleContent: Record<string, React.ReactNode> = {
+export const articleContent: Record<string, React.ReactNode> = {
     "streamvox-certified-microsoft-store": (
         <div className="prose prose-invert prose-lg max-w-none">
             <p className="lead">
@@ -108,12 +99,12 @@ const articleContent: Record<string, React.ReactNode> = {
             <h2>Which Platforms Work?</h2>
             <p>StreamVox works with <em>anything</em> that plays audio on Windows:</p>
             <ul>
-                <li>✅ Crunchyroll (even without subs)</li>
-                <li>✅ Netflix (Japanese audio track)</li>
-                <li>✅ YouTube (raw anime uploads)</li>
-                <li>✅ Twitch (Japanese streamers)</li>
-                <li>✅ VLC / MPC-HC (local files)</li>
-                <li>✅ Any browser or video player</li>
+                <li>Crunchyroll (even without subs)</li>
+                <li>Netflix (Japanese audio track)</li>
+                <li>YouTube (raw anime uploads)</li>
+                <li>Twitch (Japanese streamers)</li>
+                <li>VLC / MPC-HC (local files)</li>
+                <li>Any browser or video player</li>
             </ul>
 
             <h2>Is the Translation Good?</h2>
@@ -157,12 +148,12 @@ const articleContent: Record<string, React.ReactNode> = {
 
             <h2>Supported Platforms</h2>
             <ul>
-                <li>✅ Zoom</li>
-                <li>✅ Microsoft Teams</li>
-                <li>✅ Google Meet</li>
-                <li>✅ Discord</li>
-                <li>✅ Skype</li>
-                <li>✅ Any video conferencing app</li>
+                <li>Zoom</li>
+                <li>Microsoft Teams</li>
+                <li>Google Meet</li>
+                <li>Discord</li>
+                <li>Skype</li>
+                <li>Any video conferencing app</li>
             </ul>
 
             <h2>Privacy Note</h2>
@@ -238,10 +229,10 @@ const articleContent: Record<string, React.ReactNode> = {
             <h2>Best Visual Novels to Try</h2>
             <p>Here are some popular untranslated VNs perfect for StreamVox:</p>
             <ul>
-                <li>✅ Newer releases with full voice acting</li>
-                <li>✅ Drama and romance VNs with clear dialogue</li>
-                <li>✅ Sports and slice-of-life genres</li>
-                <li>✅ Sequels to translated games</li>
+                <li>Newer releases with full voice acting</li>
+                <li>Drama and romance VNs with clear dialogue</li>
+                <li>Sports and slice-of-life genres</li>
+                <li>Sequels to translated games</li>
             </ul>
 
             <h2>Tips for Best Results</h2>
@@ -295,18 +286,18 @@ const articleContent: Record<string, React.ReactNode> = {
 
             <h2>When to Use StreamVox</h2>
             <ul>
-                <li>✅ You need multi-language translation</li>
-                <li>✅ You want subtitles for any audio (games, movies, streams)</li>
-                <li>✅ You need a floating overlay that works everywhere</li>
-                <li>✅ Privacy matters - no recordings stored</li>
+                <li>You need multi-language translation</li>
+                <li>You want subtitles for any audio (games, movies, streams)</li>
+                <li>You need a floating overlay that works everywhere</li>
+                <li>Privacy matters - no recordings stored</li>
             </ul>
 
             <h2>When to Use Otter.ai</h2>
             <ul>
-                <li>✅ You need English transcription only</li>
-                <li>✅ You want meeting summaries and searchable notes</li>
-                <li>✅ You need speaker identification</li>
-                <li>✅ You want deep Zoom/Teams integration</li>
+                <li>You need English transcription only</li>
+                <li>You want meeting summaries and searchable notes</li>
+                <li>You need speaker identification</li>
+                <li>You want deep Zoom/Teams integration</li>
             </ul>
 
             <h2>Verdict</h2>
@@ -358,10 +349,10 @@ const articleContent: Record<string, React.ReactNode> = {
             <h2>Comparison Table</h2>
             <p>Here&apos;s how they stack up for common use cases:</p>
             <ul>
-                <li><strong>Anime/Movies</strong>: StreamVox ✅ | Others ❌</li>
-                <li><strong>Live Calls</strong>: StreamVox ✅ | Others limited</li>
-                <li><strong>Document Translation</strong>: DeepL ✅</li>
-                <li><strong>Quick Text</strong>: Google Translate ✅</li>
+                <li><strong>Anime/Movies</strong>: StreamVox | Others limited</li>
+                <li><strong>Live Calls</strong>: StreamVox | Others limited</li>
+                <li><strong>Document Translation</strong>: DeepL</li>
+                <li><strong>Quick Text</strong>: Google Translate</li>
             </ul>
 
             <h2>Our Recommendation</h2>
@@ -374,126 +365,3 @@ const articleContent: Record<string, React.ReactNode> = {
         </div>
     ),
 };
-
-interface PageProps {
-    params: Promise<{ slug: string }>;
-}
-
-export async function generateStaticParams() {
-    return blogPosts.map((post) => ({
-        slug: post.slug,
-    }));
-}
-
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-    const { slug } = await params;
-    const post = getBlogPost(slug);
-
-    if (!post) {
-        return { title: "Article Not Found" };
-    }
-
-    return {
-        title: `${post.title} | StreamVox Blog`,
-        description: post.description,
-        keywords: post.keywords,
-        authors: [{ name: post.author }],
-        openGraph: {
-            title: post.title,
-            description: post.description,
-            type: "article",
-            publishedTime: post.date,
-            authors: [post.author],
-            url: `https://streamvox.pro/blog/${post.slug}`,
-        },
-    };
-}
-
-export default async function BlogPostPage({ params }: PageProps) {
-    const { slug } = await params;
-    const post = getBlogPost(slug);
-
-    if (!post) {
-        notFound();
-    }
-
-    const content = articleContent[slug];
-
-    return (
-        <main className="min-h-screen bg-background">
-            <Navbar />
-
-            <article className="pt-32 pb-16">
-                <Container className="max-w-3xl">
-                    <Link href="/blog" className="inline-flex items-center gap-2 text-text-muted hover:text-white mb-8 transition-colors">
-                        <ArrowLeft className="w-4 h-4" />
-                        Back to Blog
-                    </Link>
-
-                    <header className="mb-12">
-                        <div className="flex items-center gap-3 text-sm text-text-muted mb-4">
-                            <span className="px-3 py-1 bg-primary/20 text-primary rounded-full font-medium">
-                                {post.category}
-                            </span>
-                            <span className="flex items-center gap-1">
-                                <Clock className="w-4 h-4" />
-                                {post.readTime}
-                            </span>
-                        </div>
-
-                        <h1 className="text-3xl md:text-5xl font-bold mb-6">
-                            {post.title}
-                        </h1>
-
-                        <div className="flex flex-wrap items-center gap-4 text-sm text-text-muted">
-                            <span className="flex items-center gap-2">
-                                <User className="w-4 h-4" />
-                                {post.author}
-                            </span>
-                            <span className="flex items-center gap-2">
-                                <Calendar className="w-4 h-4" />
-                                {new Date(post.date).toLocaleDateString("en-US", {
-                                    month: "long",
-                                    day: "numeric",
-                                    year: "numeric"
-                                })}
-                            </span>
-                        </div>
-                    </header>
-
-                    <div className="mb-12">
-                        {content}
-                    </div>
-
-                    {/* CTA */}
-                    <div className="border border-white/10 rounded-2xl p-8 bg-gradient-to-br from-primary/10 to-secondary/10 text-center">
-                        <h3 className="text-2xl font-bold mb-3">Ready to Try StreamVox?</h3>
-                        <p className="text-text-muted mb-6">
-                            Get real-time translated subtitles for any audio on Windows.
-                        </p>
-                        <a href="https://apps.microsoft.com/detail/9NC10103JH7L" target="_blank" rel="noopener noreferrer">
-                            <Button size="lg">
-                                Download Free from Microsoft Store
-                            </Button>
-                        </a>
-                    </div>
-
-                    {/* Tags */}
-                    <div className="mt-8 flex flex-wrap gap-2">
-                        {post.keywords.map((keyword) => (
-                            <span
-                                key={keyword}
-                                className="flex items-center gap-1 px-3 py-1 bg-white/5 rounded-full text-sm text-text-muted"
-                            >
-                                <Tag className="w-3 h-3" />
-                                {keyword}
-                            </span>
-                        ))}
-                    </div>
-                </Container>
-            </article>
-
-            <Footer />
-        </main>
-    );
-}
