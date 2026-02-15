@@ -45,11 +45,6 @@ export function JsonLd() {
         "name": "StreamVox Pro",
         "operatingSystem": "Windows 10, Windows 11",
         "applicationCategory": "MultimediaApplication",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "1250"
-        },
         "offers": [
             {
                 "@type": "Offer",
@@ -72,7 +67,8 @@ export function JsonLd() {
         "installUrl": "https://apps.microsoft.com/detail/9NC10103JH7L",
         "featureList": [
             "Real-time AI translation",
-            "Smart floating overlay",
+            "Customizable floating overlay (font, color, size)",
+            "Per-app audio capture (Zoom, Teams, Discord)",
             "Bidirectional translation (system audio + microphone)",
             "10+ supported languages",
             "Multilingual interface (8 languages)",
@@ -81,7 +77,7 @@ export function JsonLd() {
             "Low latency subtitle generation"
         ],
         "screenshot": `${baseUrl}/assets/showcase/StreamVox_main.png`,
-        "softwareVersion": "1.4.0",
+        "softwareVersion": "1.1.5",
         "author": {
             "@type": "Organization",
             "name": "StreamVox",

@@ -26,7 +26,8 @@ Live on-screen subtitles help people who have difficulty hearing speech. Makes c
 ## Key Features
 
 - **Low Latency AI Translation**: Context-aware real-time translation with minimal delay
-- **Universal Overlay**: Floating subtitle window that stays on top of any app
+- **Universal Overlay**: Customizable floating subtitle window (font size 12-72px, text colors, opacity) stays on top of any app
+- **Per-App Audio Capture**: Isolate specific apps like Zoom, Teams, or Discord for cleaner translation
 - **Bidirectional Translation**: Translates both system audio (what you hear) and microphone (what you say)
 - **10+ Languages**: English, Japanese, Russian, German, Spanish, French, Chinese, Korean, Portuguese, Italian
 - **Multilingual Interface**: App UI available in 8 languages (English, Espanol, Portugues, Chinese, Japanese, Deutsch, Francais, Russian)
@@ -42,7 +43,7 @@ Live on-screen subtitles help people who have difficulty hearing speech. Makes c
 
 Microsoft Store: https://apps.microsoft.com/detail/9NC10103JH7L
 Website: https://streamvox.pro
-Version: 1.4.0
+Version: 1.1.5
 
 ## Technical Details
 
