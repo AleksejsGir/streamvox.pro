@@ -4,12 +4,18 @@ import { Container } from "@/shared/ui/Container";
 import { Navbar } from "@/widgets/Navbar";
 import { Footer } from "@/widgets/Footer";
 import { blogPosts, getBlogPost } from "@/shared/data/blogPosts";
-import { ArrowLeft, Calendar, Clock, User, Tag } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, User, Tag, ArrowRight } from "lucide-react";
 import { Button } from "@/shared/ui/Button";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { articleContent } from "@/shared/data/articleContent";
+
+const WindowsLogo = ({ className }: { className?: string }) => (
+    <svg className={className} viewBox="0 0 88 88" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 12.402L35.698 7.548V41.748H0V12.402ZM0 45.897H35.698V80.368L0 75.328V45.897ZM40.165 41.748H87.712V0L40.165 6.784V41.748ZM40.165 45.897V81.151L87.712 88V45.897H40.165Z" />
+    </svg>
+);
 
 interface PageProps {
     params: Promise<{ slug: string; locale: string }>;
@@ -110,8 +116,12 @@ export default async function BlogPostPage({ params }: PageProps) {
                             {t("readyToTryDesc")}
                         </p>
                         <a href="https://apps.microsoft.com/detail/9NC10103JH7L?cid=sv_website" target="_blank" rel="noopener noreferrer">
-                            <Button size="lg">
-                                {t("downloadFree")}
+                            <Button size="lg" className="group h-14 px-8 text-sm font-bold bg-white/5 hover:bg-white/10 backdrop-blur-md border border-primary/50 hover:border-primary shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:scale-[1.02] transition-all w-full sm:w-auto rounded-lg">
+                                <WindowsLogo className="mr-3 h-6 w-6 text-primary fill-current" />
+                                <span className="text-primary font-bold">
+                                    {t("downloadFree")}
+                                </span>
+                                <ArrowRight className="ml-3 h-4 w-4 text-primary opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
                             </Button>
                         </a>
                     </div>
