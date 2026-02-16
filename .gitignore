@@ -50,4 +50,5 @@ yarn-error.log*
 lighthouse-report.json
 
 # Internal docs
-docs/
+# Internal docs (root only)
+/docs/
