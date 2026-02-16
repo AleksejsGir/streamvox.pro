@@ -19,6 +19,7 @@ const WindowsLogo = ({ className }: { className?: string }) => (
 export function Hero() {
     const t = useTranslations("Hero");
     const [isDemoOpen, setIsDemoOpen] = useState(false);
+    const [isMonitorOpen, setIsMonitorOpen] = useState(false);
 
     const benefits = [
         "benefit1", "benefit2", "benefit3", "benefit4", "benefit5"
@@ -51,6 +52,13 @@ export function Hero() {
                 isOpen={isDemoOpen}
                 onClose={() => setIsDemoOpen(false)}
                 videoId="56UR6gu9HtU"
+            />
+
+            <VideoModal
+                isOpen={isMonitorOpen}
+                onClose={() => setIsMonitorOpen(false)}
+                videoUrl="/assets/showcase/StreamFox_Video.mp4"
+                aspectRatio="landscape"
             />
 
             {/* Background Effects */}
@@ -148,7 +156,8 @@ export function Hero() {
 
                         {/* Monitor Bezel */}
                         <div
-                            className="relative w-full bg-gray-950 rounded-t-[1rem] rounded-b-[1.5rem] pt-3 px-3 pb-8 shadow-2xl ring-1 ring-white/10 cursor-zoom-in group border-t border-x border-gray-700 border-b-4 border-b-gray-800"
+                            onClick={() => setIsMonitorOpen(true)}
+                            className="relative w-full bg-gray-950 rounded-t-[1rem] rounded-b-[1.5rem] pt-3 px-3 pb-8 shadow-2xl ring-1 ring-white/10 cursor-zoom-in group border-t border-x border-gray-700 border-b-4 border-b-gray-800 hover:scale-[1.02] transition-transform duration-300"
                         >
                             {/* Screen */}
                             <div className="relative w-full rounded-md overflow-hidden shadow-inner border border-white/5 aspect-video bg-black">
