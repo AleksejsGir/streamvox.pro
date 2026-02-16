@@ -10,13 +10,22 @@
   },
   "Hero": {
     "badge": "v1.1.5 Disponible maintenant",
-    "title": "Brisez les barrieres linguistiques",
-    "titleGradient": "avec la traduction IA en temps reel",
-    "description": "StreamVox pour Windows - Sous-titres en direct pour les appels, reunions, animes et streams dans plus de 10 langues.",
-    "downloadBtn": "Telecharger sur le MS Store",
+    "title": "StreamVox",
+    "titleGradient": "Sous-titres IA et traduction en temps réel",
+    "description": "Traduction instantanée de tout l'audio sur votre PC Windows. Comprenez les appels, regardez des streams étrangers et jouez sans barrière de la langue.",
+    "benefit1": "Confidentialité : L'audio n'est jamais stocké",
+    "benefit2": "Compatible avec Zoom, Teams, Discord et Jeux",
+    "benefit3": "IA à latence ultra-faible",
+    "benefit4": "Audio Intelligent : Capturez des applications spécifiques",
+    "benefit5": "Bidirectionnel : Traduisez Micro & Audio Système",
+    "downloadBtn": "Télécharger sur le Microsoft Store",
     "demoBtn": "Voir la demo",
     "liveTranslation": "Traduction en direct",
-    "quote": "Une technologie qui semble magique."
+    "quote": "Une technologie qui semble magique.",
+    "featureAI": "STT propulsé par IA",
+    "featurePerApp": "Capture audio par app",
+    "featureLanguages": "10+ langues",
+    "featureWindows": "Windows Desktop"
   },
   "Features": {
     "title": "Au service de la communication",
@@ -134,7 +143,9 @@
     "refundPolicy": "Politique de remboursement",
     "connect": "Contact",
     "support": "Support",
-    "rights": "AlekGir. Tous droits reserves."
+    "rights": "AlekGir. Tous droits réservés.",
+    "contactText": "Des questions ? Nous sommes à votre écoute.",
+    "systemStatus": "Systèmes opérationnels"
   },
   "Docs": {
     "title": "Documentation",

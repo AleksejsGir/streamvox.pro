@@ -17,7 +17,7 @@ export function JsonLd() {
             "name": "AlekGir"
         },
         "sameAs": [
-            "https://apps.microsoft.com/detail/9NC10103JH7L",
+            "https://apps.microsoft.com/detail/9NC10103JH7L?cid=sv_website",
             "https://www.facebook.com/profile.php?id=61586199129069"
         ]
     };
@@ -62,9 +62,9 @@ export function JsonLd() {
                 "description": "Unlimited translation time, monthly subscription"
             }
         ],
-        "description": "Real-time AI translator for Windows. Get live subtitles for calls, meetings, anime, and movies.",
-        "downloadUrl": "https://apps.microsoft.com/detail/9NC10103JH7L",
-        "installUrl": "https://apps.microsoft.com/detail/9NC10103JH7L",
+        "description": en.Metadata.description,
+        "downloadUrl": "https://apps.microsoft.com/detail/9NC10103JH7L?cid=sv_website",
+        "installUrl": "https://apps.microsoft.com/detail/9NC10103JH7L?cid=sv_website",
         "featureList": [
             "Real-time AI translation",
             "Customizable floating overlay (font, color, size)",

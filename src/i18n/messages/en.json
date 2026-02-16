@@ -10,13 +10,22 @@
   },
   "Hero": {
     "badge": "v1.1.5 Now Available",
-    "title": "Break Language Barriers",
-    "titleGradient": "with Real-Time AI Translation",
-    "description": "StreamVox for Windows - Live subtitles for calls, meetings, anime, and streams in 10+ languages.",
-    "downloadBtn": "Download on MS Store",
+    "title": "StreamVox",
+    "titleGradient": "Real-Time AI Subtitles & Translation",
+    "description": "Instant translation for any audio on your Windows PC. Understand calls, watch foreign streams, and play games without language barriers.",
+    "benefit1": "Privacy-First: Audio is never stored",
+    "benefit2": "Compatible with Zoom, Teams, Discord & Games",
+    "benefit3": "Ultra-Low Latency AI",
+    "benefit4": "Smart Audio: Capture Specific Apps Only",
+    "benefit5": "Bidirectional: Translate Mic & System Audio",
+    "downloadBtn": "Download on Microsoft Store",
     "demoBtn": "Watch Demo",
     "liveTranslation": "Live Translation",
-    "quote": "Technology that feels like magic."
+    "quote": "Technology that feels like magic.",
+    "featureAI": "AI-Powered STT",
+    "featurePerApp": "Per-App Audio Capture",
+    "featureLanguages": "10+ Languages",
+    "featureWindows": "Windows Desktop"
   },
   "Features": {
     "title": "Powering Global",
@@ -134,7 +143,9 @@
     "refundPolicy": "Refund Policy",
     "connect": "Connect",
     "support": "Support",
-    "rights": "AlekGir. All rights reserved."
+    "rights": "AlekGir. All rights reserved.",
+    "contactText": "Have questions or feedback? We'd love to hear from you.",
+    "systemStatus": "All Systems Operational"
   },
   "Docs": {
     "title": "Documentation",
@@ -245,11 +256,11 @@
     "downloadFree": "Download Free from Microsoft Store"
   },
   "Metadata": {
-    "title": "StreamVox - Real-Time AI Translator for Windows | Live Subtitles",
-    "description": "Real-time AI translator for Windows. Add live subtitles to calls, meetings, anime, and streams. Floating overlay, 10+ languages. Download free.",
-    "ogTitle": "StreamVox - Real-time AI Translator for Windows",
-    "ogDescription": "Break language barriers instantly with AI-powered subtitles for any app on Windows.",
-    "twitterTitle": "StreamVox - Real-time AI Translator",
-    "twitterDescription": "Live AI subtitles for calls, streams, and movies on Windows."
+    "title": "StreamVox - Real-Time AI Subtitles & Translation for Windows",
+    "description": "Instant translation for any audio on your Windows PC. Real-time AI subtitles for calls, meetings, anime, and games. Download for free.",
+    "ogTitle": "StreamVox - Real-Time AI Subtitles & Translation for Windows",
+    "ogDescription": "Instant real-time translation for any audio on your Windows PC. Calls, movies, games, and more.",
+    "twitterTitle": "StreamVox - Real-Time AI Subtitles & Translation",
+    "twitterDescription": "Instant translation for any audio on your Windows PC."
   }
 }

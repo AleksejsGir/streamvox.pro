@@ -10,13 +10,22 @@
   },
   "Hero": {
     "badge": "v1.1.5 Jetzt verfügbar",
-    "title": "Sprachbarrieren überwinden",
-    "titleGradient": "mit KI-Echtzeitübersetzung",
-    "description": "StreamVox für Windows – Live-Untertitel für Anrufe, Meetings, Anime und Streams in über 10 Sprachen.",
-    "downloadBtn": "Im MS Store herunterladen",
+    "title": "StreamVox",
+    "titleGradient": "KI-Untertitel & Echtzeitübersetzung",
+    "description": "Sofortige Übersetzung für jedes Audio auf Ihrem Windows-PC. Verstehen Sie Anrufe, schauen Sie ausländische Streams und spielen Sie Spiele ohne Sprachbarrieren.",
+    "benefit1": "Datenschutzgarantie: Audio wird niemals gespeichert",
+    "benefit2": "Kompatibel mit Zoom, Teams, Discord & Spielen",
+    "benefit3": "KI mit ultra-niedriger Latenz",
+    "benefit4": "Smart Audio: Nur bestimmte Apps aufnehmen",
+    "benefit5": "Bidirektional: Mikrofon & Systemaudio übersetzen",
+    "downloadBtn": "Im Microsoft Store herunterladen",
     "demoBtn": "Demo ansehen",
     "liveTranslation": "Live-Übersetzung",
-    "quote": "Technologie, die sich wie Magie anfühlt."
+    "quote": "Technologie, die sich wie Magie anfühlt.",
+    "featureAI": "KI-Spracherkennung",
+    "featurePerApp": "App-Audio-Aufnahme",
+    "featureLanguages": "10+ Sprachen",
+    "featureWindows": "Windows Desktop"
   },
   "Features": {
     "title": "Globale",
@@ -134,7 +143,9 @@
     "refundPolicy": "Erstattungsrichtlinie",
     "connect": "Kontakt",
     "support": "Support",
-    "rights": "AlekGir. Alle Rechte vorbehalten."
+    "rights": "AlekGir. Alle Rechte vorbehalten.",
+    "contactText": "Fragen? Wir sind immer für Sie da.",
+    "systemStatus": "Alle Systeme betriebsbereit"
   },
   "Docs": {
     "title": "Dokumentation",

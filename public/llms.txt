@@ -1,6 +1,6 @@
 # StreamVox Pro
 
-> Real-time AI translator and subtitle generator for Windows.
+> Real-Time AI Subtitles & Translation for Windows.
 
 ## What is StreamVox?
 
@@ -41,7 +41,7 @@ Live on-screen subtitles help people who have difficulty hearing speech. Makes c
 
 ## Download
 
-Microsoft Store: https://apps.microsoft.com/detail/9NC10103JH7L
+Microsoft Store: https://apps.microsoft.com/detail/9NC10103JH7L?cid=sv_llms
 Website: https://streamvox.pro
 Version: 1.1.5
 
@@ -54,7 +54,7 @@ Version: 1.1.5
 ## Links
 
 - Website: https://streamvox.pro
-- Download: https://apps.microsoft.com/detail/9NC10103JH7L
+- Download: https://apps.microsoft.com/detail/9NC10103JH7L?cid=sv_llms
 - Privacy Policy: https://streamvox.pro/privacy
 - Terms of Service: https://streamvox.pro/terms
 - Contact: hello@alekgir.com

@@ -109,7 +109,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                         <p className="text-text-muted mb-6">
                             {t("readyToTryDesc")}
                         </p>
-                        <a href="https://apps.microsoft.com/detail/9NC10103JH7L" target="_blank" rel="noopener noreferrer">
+                        <a href="https://apps.microsoft.com/detail/9NC10103JH7L?cid=sv_website" target="_blank" rel="noopener noreferrer">
                             <Button size="lg">
                                 {t("downloadFree")}
                             </Button>

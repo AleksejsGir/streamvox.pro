@@ -6,6 +6,12 @@ import { Check } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 
+const WindowsLogo = ({ className }: { className?: string }) => (
+    <svg className={className} viewBox="0 0 88 88" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 12.402L35.698 7.548V41.748H0V12.402ZM0 45.897H35.698V80.368L0 75.328V45.897ZM40.165 41.748H87.712V0L40.165 6.784V41.748ZM40.165 45.897V81.151L87.712 88V45.897H40.165Z" />
+    </svg>
+);
+
 export function Pricing() {
     const t = useTranslations("Pricing");
     return (
@@ -52,8 +58,9 @@ export function Pricing() {
                             </li>
                         </ul>
 
-                        <a href="https://apps.microsoft.com/detail/9NC10103JH7L" target="_blank" rel="noopener noreferrer">
-                            <Button variant="outline" className="w-full bg-transparent hover:bg-white/5 border-white/20">
+                        <a href="https://apps.microsoft.com/detail/9NC10103JH7L?cid=sv_website" target="_blank" rel="noopener noreferrer">
+                            <Button variant="outline" className="w-full bg-transparent hover:bg-white/5 border-white/20 h-10 group">
+                                <WindowsLogo className="mr-2 h-4 w-4 fill-current opacity-70 group-hover:opacity-100 transition-opacity" />
                                 {t("freeBtn")}
                             </Button>
                         </a>
@@ -101,10 +108,13 @@ export function Pricing() {
                             </li>
                         </ul>
 
-                        <div className="space-y-3">
-                            <a href="https://apps.microsoft.com/detail/9NC10103JH7L" target="_blank" rel="noopener noreferrer">
-                                <Button className="w-full">
-                                    {t("proBtn")}
+                        <div className="space-y-6">
+                            <a href="https://apps.microsoft.com/detail/9NC10103JH7L?cid=sv_website" target="_blank" rel="noopener noreferrer" className="block w-full">
+                                <Button className="w-full h-12 text-sm font-bold bg-white/5 hover:bg-white/10 backdrop-blur-md border border-primary/50 hover:border-primary shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:scale-[1.02] transition-all rounded-lg group">
+                                    <WindowsLogo className="mr-2 h-5 w-5 text-primary fill-current" />
+                                    <span className="text-primary font-bold">
+                                        {t("proBtn")}
+                                    </span>
                                 </Button>
                             </a>
                             <Button variant="outline" className="w-full border-white/20 hover:bg-white/5" disabled>

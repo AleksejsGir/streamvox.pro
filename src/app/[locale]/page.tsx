@@ -1,9 +1,9 @@
 import { setRequestLocale } from "next-intl/server";
 import { Navbar } from "@/widgets/Navbar";
 import { Hero } from "@/widgets/Hero";
+import { SmartOverlayDemo } from "@/features/SmartOverlay/Demo";
 import { UseCases } from "@/widgets/UseCases";
 import { Features } from "@/widgets/Features";
-import { SmartOverlayDemo } from "@/features/SmartOverlay/Demo";
 import { Pricing } from "@/widgets/Pricing";
 import { FAQ } from "@/widgets/FAQ";
 import { Footer } from "@/widgets/Footer";
@@ -20,9 +20,9 @@ export default async function Home({
         <main>
             <Navbar />
             <Hero />
+            <SmartOverlayDemo />
             <Features />
             <UseCases />
-            <SmartOverlayDemo />
             <Pricing />
             <FAQ />
             <Footer />

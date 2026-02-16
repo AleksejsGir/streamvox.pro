@@ -10,13 +10,22 @@
   },
   "Hero": {
     "badge": "v1.1.5 公開中",
-    "title": "言語の壁を超えよう",
-    "titleGradient": "リアルタイムAI翻訳で",
-    "description": "StreamVox for Windows - 通話、会議、アニメ、配信に対応したライブ字幕。10以上の言語をサポート。",
-    "downloadBtn": "MS Storeでダウンロード",
+    "title": "StreamVox",
+    "titleGradient": "リアルタイムAI字幕・翻訳",
+    "description": "Windows PC上のあらゆる音声を瞬時に翻訳。通話を理解し、海外のストリームを見て、言葉の壁なくゲームを楽しみましょう。",
+    "benefit1": "プライバシー優先：音声は保存されません",
+    "benefit2": "Zoom、Teams、Discord、ゲームに対応",
+    "benefit3": "超低遅延AI",
+    "benefit4": "スマートオーディオ：特定のアプリのみキャプチャ",
+    "benefit5": "双方向：マイクとシステム音声を翻訳",
+    "downloadBtn": "Microsoft Storeでダウンロード",
     "demoBtn": "デモを見る",
     "liveTranslation": "リアルタイム翻訳",
-    "quote": "魔法のようなテクノロジー。"
+    "quote": "魔法のようなテクノロジー。",
+    "featureAI": "AI音声認識",
+    "featurePerApp": "アプリ別音声キャプチャ",
+    "featureLanguages": "10以上の言語",
+    "featureWindows": "Windows デスクトップ"
   },
   "Features": {
     "title": "グローバルな",
@@ -134,7 +143,9 @@
     "refundPolicy": "返金ポリシー",
     "connect": "つながる",
     "support": "サポート",
-    "rights": "AlekGir. All rights reserved."
+    "rights": "AlekGir. 全著作権所有。",
+    "contactText": "ご質問がありますか？お気軽にお問い合わせください。",
+    "systemStatus": "全システム稼働中"
   },
   "Docs": {
     "title": "ドキュメント",

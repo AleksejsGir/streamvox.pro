@@ -13,6 +13,12 @@ import { cn } from "@/shared/lib/utils";
 import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
+const WindowsLogo = ({ className }: { className?: string }) => (
+    <svg className={className} viewBox="0 0 88 88" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 12.402L35.698 7.548V41.748H0V12.402ZM0 45.897H35.698V80.368L0 75.328V45.897ZM40.165 41.748H87.712V0L40.165 6.784V41.748ZM40.165 45.897V81.151L87.712 88V45.897H40.165Z" />
+    </svg>
+);
+
 export function Navbar() {
     const t = useTranslations("Navbar");
     const [scrolled, setScrolled] = useState(false);
@@ -39,11 +45,19 @@ export function Navbar() {
         <nav
             className={cn(
                 "fixed top-0 w-full z-50 transition-all duration-300 border-b border-transparent",
-                scrolled || mobileMenuOpen ? "bg-black/80 backdrop-blur-md border-white/10 py-4" : "bg-transparent py-6"
+                mobileMenuOpen
+                    ? "bg-black/95 backdrop-blur-3xl border-white/10 py-4"
+                    : scrolled
+                        ? "bg-black/80 backdrop-blur-md border-white/10 py-4"
+                        : "bg-transparent py-6"
             )}
         >
             <Container className="flex items-center justify-between relative">
-                <Link href="/" className="relative z-50">
+                <Link
+                    href="/"
+                    className="relative z-50 block w-fit cursor-pointer hover:opacity-80 transition-opacity"
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                >
                     <Image
                         src="/assets/Logo/SteramVox_logo.jpg"
                         alt="StreamVox Logo"
@@ -63,10 +77,12 @@ export function Navbar() {
                 </div>
 
                 <div className="hidden sm:flex items-center gap-4">
-                    <a href="https://apps.microsoft.com/detail/9NC10103JH7L" target="_blank" rel="noopener noreferrer">
-                        <Button size="sm">
-                            <Download className="mr-2 h-4 w-4" />
-                            {t("getApp")}
+                    <a href="https://apps.microsoft.com/detail/9NC10103JH7L?cid=sv_website" target="_blank" rel="noopener noreferrer">
+                        <Button className="h-10 px-6 text-xs font-bold bg-white/5 hover:bg-white/10 backdrop-blur-md border border-primary/50 hover:border-primary shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:scale-[1.02] transition-all rounded-lg group">
+                            <WindowsLogo className="mr-2 h-4 w-4 text-primary fill-current" />
+                            <span className="text-primary font-bold">
+                                {t("getApp")}
+                            </span>
                         </Button>
                     </a>
                 </div>
@@ -87,25 +103,65 @@ export function Navbar() {
                 <AnimatePresence>
                     {mobileMenuOpen && (
                         <motion.div
-                            initial={{ opacity: 0, y: -20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: -20 }}
-                            className="absolute top-full left-0 right-0 w-full bg-black/95 backdrop-blur-xl border-b border-white/10 p-6 md:hidden flex flex-col gap-6 shadow-2xl"
+                            initial="closed"
+                            animate="open"
+                            exit="closed"
+                            variants={{
+                                open: {
+                                    opacity: 1,
+                                    height: "auto",
+                                    transition: { staggerChildren: 0.1, delayChildren: 0.1 }
+                                },
+                                closed: {
+                                    opacity: 0,
+                                    height: 0,
+                                    transition: { staggerChildren: 0.05, staggerDirection: -1 }
+                                }
+                            }}
+                            className="absolute top-full left-0 right-0 w-full bg-black/95 backdrop-blur-3xl border-b border-white/10 overflow-hidden shadow-2xl"
                         >
-                            <nav className="flex flex-col gap-4 text-lg font-medium text-center">
-                                <Link href="/#features" onClick={() => setMobileMenuOpen(false)} className="text-text-muted hover:text-white py-2">{t("features")}</Link>
-                                <Link href="/#faq" onClick={() => setMobileMenuOpen(false)} className="text-text-muted hover:text-white py-2">{t("faq")}</Link>
-                                <Link href="/blog" onClick={() => setMobileMenuOpen(false)} className="text-text-muted hover:text-white py-2">{t("blog")}</Link>
-                                <Link href="/#pricing" onClick={() => setMobileMenuOpen(false)} className="text-text-muted hover:text-white py-2">{t("pricing")}</Link>
-                            </nav>
-                            <div className="flex flex-col gap-4">
-                                <a href="https://apps.microsoft.com/detail/9NC10103JH7L" target="_blank" rel="noopener noreferrer" className="w-full">
-                                    <Button className="w-full">
-                                        <Download className="mr-2 h-4 w-4" />
-                                        {t("getAppWindows")}
-                                    </Button>
-                                </a>
-                            </div>
+                            <Container className="py-8 flex flex-col gap-6">
+                                <nav className="flex flex-col gap-6 text-2xl font-semibold text-center">
+                                    {[
+                                        { href: "/#features", label: t("features") },
+                                        { href: "/#faq", label: t("faq") },
+                                        { href: "/blog", label: t("blog") },
+                                        { href: "/#pricing", label: t("pricing") },
+                                    ].map((item, i) => (
+                                        <motion.div
+                                            key={item.href}
+                                            variants={{
+                                                open: { y: 0, opacity: 1 },
+                                                closed: { y: 20, opacity: 0 }
+                                            }}
+                                        >
+                                            <Link
+                                                href={item.href}
+                                                onClick={() => setMobileMenuOpen(false)}
+                                                className="text-white hover:text-primary transition-colors block"
+                                            >
+                                                {item.label}
+                                            </Link>
+                                        </motion.div>
+                                    ))}
+                                </nav>
+                                <motion.div
+                                    variants={{
+                                        open: { y: 0, opacity: 1 },
+                                        closed: { y: 20, opacity: 0 }
+                                    }}
+                                    className="flex flex-col gap-4 mt-4"
+                                >
+                                    <a href="https://apps.microsoft.com/detail/9NC10103JH7L?cid=sv_website" target="_blank" rel="noopener noreferrer" className="w-full">
+                                        <Button className="w-full h-14 text-base font-bold bg-white/10 hover:bg-white/20 backdrop-blur-md border border-primary/50 hover:border-primary shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all rounded-xl group">
+                                            <WindowsLogo className="mr-3 h-6 w-6 text-primary fill-current" />
+                                            <span className="text-primary font-bold">
+                                                {t("getAppWindows")}
+                                            </span>
+                                        </Button>
+                                    </a>
+                                </motion.div>
+                            </Container>
                         </motion.div>
                     )}
                 </AnimatePresence>

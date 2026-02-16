@@ -10,13 +10,22 @@
   },
   "Hero": {
     "badge": "v1.1.5 Ya disponible",
-    "title": "Rompe las barreras del idioma",
-    "titleGradient": "con traducción en tiempo real con IA",
-    "description": "StreamVox para Windows: subtítulos en vivo para llamadas, reuniones, anime y streams en más de 10 idiomas.",
-    "downloadBtn": "Descargar en MS Store",
+    "title": "StreamVox",
+    "titleGradient": "Subtítulos IA y traducción en tiempo real",
+    "description": "Traducción instantánea para cualquier audio en tu PC con Windows. Entiende llamadas, mira streams extranjeros y juega sin barreras de idioma.",
+    "benefit1": "Privacidad primero: El audio nunca se guarda",
+    "benefit2": "Compatible con Zoom, Teams, Discord y juegos",
+    "benefit3": "IA de latencia ultrabaja",
+    "benefit4": "Audio Inteligente: Captura solo apps específicas",
+    "benefit5": "Bidireccional: Traduce Micrófono y Audio del Sistema",
+    "downloadBtn": "Descargar en Microsoft Store",
     "demoBtn": "Ver Demo",
     "liveTranslation": "Traducción en vivo",
-    "quote": "Tecnología que parece magia."
+    "quote": "Tecnología que parece magia.",
+    "featureAI": "STT con IA",
+    "featurePerApp": "Captura de audio por app",
+    "featureLanguages": "10+ idiomas",
+    "featureWindows": "Windows Desktop"
   },
   "Features": {
     "title": "Impulsando la comunicación",
@@ -134,7 +143,9 @@
     "refundPolicy": "Política de reembolso",
     "connect": "Conectar",
     "support": "Soporte",
-    "rights": "AlekGir. Todos los derechos reservados."
+    "rights": "AlekGir. Todos los derechos reservados.",
+    "contactText": "¿Preguntas? Estamos aquí para ayudar.",
+    "systemStatus": "Sistemas operativos"
   },
   "Docs": {
     "title": "Documentación",
