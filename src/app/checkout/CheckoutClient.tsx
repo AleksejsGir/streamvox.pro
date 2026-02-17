@@ -40,6 +40,14 @@ export default function CheckoutClient() {
                 },
             });
             setStatus("ready");
+
+            // Auto-open checkout if _ptxn is present
+            const ptxn = searchParams.get("_ptxn");
+            if (ptxn) {
+                window.Paddle.Checkout.open({
+                    transactionId: ptxn,
+                });
+            }
         }
     };
 

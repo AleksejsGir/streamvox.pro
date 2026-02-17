@@ -16,12 +16,11 @@ interface PaddleInstance {
         set: (env: "sandbox" | "production") => void;
     };
     Setup: (options: PaddleSetupOptions) => void;
+    Checkout: {
+        open: (options: { transactionId?: string; items?: unknown[] }) => void;
+    };
 }
 
-declare global {
-    interface Window {
-        Paddle: PaddleInstance;
-    }
+interface Window {
+    Paddle: PaddleInstance;
 }
-
-export {};
