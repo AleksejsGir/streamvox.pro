@@ -5,7 +5,6 @@ import { Container } from "@/shared/ui/Container";
 import { Sliders } from "lucide-react";
 import { LazyVideo } from "@/shared/ui/LazyVideo";
 import { useTranslations } from "next-intl";
-import { clsx } from "clsx";
 
 interface SmartOverlayDemoProps {
     standalone?: boolean;

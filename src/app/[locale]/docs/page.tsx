@@ -14,7 +14,6 @@ import {
     HelpCircle,
     MessageCircle,
     ArrowRight,
-    ExternalLink,
     LucideIcon
 } from "lucide-react";
 import { Link } from "@/i18n/navigation";

@@ -34,7 +34,7 @@ export const articleContent: Record<string, React.ReactNode> = {
                 <h3 className="text-xl font-bold mb-2 !mt-0">Pro Pricing</h3>
                 <p className="text-3xl font-bold text-primary mb-2">$5.99<span className="text-lg text-text-muted font-normal">/month</span></p>
                 <p className="text-sm text-text-muted mb-4">Cancel anytime directly from the Microsoft Store.</p>
-                <p><strong>How to Upgrade:</strong> Open StreamVox → Click "Upgrade to Pro"</p>
+                <p><strong>How to Upgrade:</strong> Open StreamVox → Click &quot;Upgrade to Pro&quot;</p>
             </div>
 
             <h2>What&apos;s Coming Next?</h2>

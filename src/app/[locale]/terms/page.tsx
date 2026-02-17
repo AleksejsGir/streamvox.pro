@@ -1,5 +1,6 @@
 "use client";
 
+import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { Container } from "@/shared/ui/Container";
 import { Navbar } from "@/widgets/Navbar";
@@ -36,7 +37,7 @@ export default function Terms() {
                     <h2 className="text-2xl font-semibold mt-8 mb-4">{t("privacyTitle")}</h2>
                     <p className="text-text-muted mb-4">
                         {t("privacyText")}{" "}
-                        <a href="/privacy" className="text-primary hover:underline">{t("privacyLink")}</a>{" "}
+                        <Link href="/privacy" className="text-primary hover:underline">{t("privacyLink")}</Link>{" "}
                         {t("privacyTextEnd")}
                     </p>
                 </div>

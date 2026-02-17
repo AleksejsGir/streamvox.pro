@@ -4,7 +4,6 @@ import { Container } from "@/shared/ui/Container";
 import { Button } from "@/shared/ui/Button";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
-import { Download } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { LanguageSwitcher } from "@/features/LanguageSwitcher";
 import { useEffect, useState } from "react";
@@ -127,7 +126,7 @@ export function Navbar() {
                                         { href: "/#faq", label: t("faq") },
                                         { href: "/blog", label: t("blog") },
                                         { href: "/#pricing", label: t("pricing") },
-                                    ].map((item, i) => (
+                                    ].map((item) => (
                                         <motion.div
                                             key={item.href}
                                             variants={{

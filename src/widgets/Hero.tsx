@@ -1,12 +1,11 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
+import { motion } from "framer-motion";
 import { Button } from "@/shared/ui/Button";
 import { Container } from "@/shared/ui/Container";
-import { ArrowRight, Download, ShieldCheck, Gamepad2, Zap, AppWindow, Mic } from "lucide-react";
+import { ArrowRight, ShieldCheck, Gamepad2, Zap, AppWindow, Mic } from "lucide-react";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState } from "react";
 import { VideoModal } from "@/shared/ui/VideoModal";
 import { useTranslations } from "next-intl";
 
