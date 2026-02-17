@@ -4,9 +4,12 @@ import { useState } from "react";
 import Script from "next/script";
 import { useSearchParams } from "next/navigation";
 
+import { useLocale } from "next-intl";
+
 type CheckoutStatus = "loading" | "ready" | "completed" | "closed";
 
 export default function CheckoutClient() {
+    const locale = useLocale();
     const searchParams = useSearchParams();
     const isSuccess = searchParams.get("success") === "true";
     const [status, setStatus] = useState<CheckoutStatus>(
@@ -21,9 +24,9 @@ export default function CheckoutClient() {
                     settings: {
                         displayMode: "overlay",
                         theme: "dark",
-                        locale: "en",
+                        locale: locale,
                         successUrl:
-                            window.location.origin + "/checkout?success=true",
+                            window.location.href.split("?")[0] + "?success=true",
                     },
                 },
                 eventCallback: (event: { name: string }) => {
