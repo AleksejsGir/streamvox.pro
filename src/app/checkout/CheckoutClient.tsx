@@ -15,7 +15,6 @@ export default function CheckoutClient() {
 
     const handlePaddleLoad = () => {
         if (typeof window !== "undefined" && window.Paddle) {
-            window.Paddle.Environment.set("sandbox");
             window.Paddle.Setup({
                 token: "live_18c6012e315415d16e0b6521be8",
                 checkout: {
