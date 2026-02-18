@@ -4,7 +4,7 @@ import { Container } from "@/shared/ui/Container";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
-import { Facebook, Mail, Youtube } from "lucide-react";
+import { Facebook, Mail, Youtube, Linkedin, Instagram } from "lucide-react";
 
 export function Footer() {
     const t = useTranslations("Footer");
@@ -12,7 +12,9 @@ export function Footer() {
 
     const socialLinks = [
         { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61586199129069", label: "Facebook" },
-        { icon: Youtube, href: "https://www.youtube.com/@StreamVoxApp", label: "YouTube" }, // Placeholder for now or if user has channel
+        { icon: Instagram, href: "https://www.instagram.com/alekgir", label: "Instagram" },
+        { icon: Linkedin, href: "https://www.linkedin.com/in/aleksejs-giruckis-0569a7353/", label: "LinkedIn" },
+        { icon: Youtube, href: "https://www.youtube.com/@StreamVoxApp", label: "YouTube" },
         { icon: Mail, href: "mailto:hello@alekgir.com", label: "Email" },
     ];
 

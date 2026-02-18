@@ -19,7 +19,9 @@ export function JsonLd() {
         },
         "sameAs": [
             "https://apps.microsoft.com/detail/9NC10103JH7L?cid=sv_website",
-            "https://www.facebook.com/profile.php?id=61586199129069"
+            "https://www.facebook.com/profile.php?id=61586199129069",
+            "https://www.instagram.com/alekgir",
+            "https://www.linkedin.com/in/aleksejs-giruckis-0569a7353/"
         ]
     };
 
