@@ -208,14 +208,16 @@
   },
   "Privacy": {
     "title": "Datenschutzrichtlinie",
-    "lastUpdated": "Zuletzt aktualisiert: 5. Februar 2026",
+    "lastUpdated": "Zuletzt aktualisiert: 18. Februar 2026",
     "dataCollectionTitle": "1. Datenerhebung",
     "dataCollectionText": "StreamVox verarbeitet Audiodaten in Echtzeit, um Übersetzungsdienste bereitzustellen. Diese Audiodaten werden vorübergehend verarbeitet und NICHT auf unseren Servern gespeichert.",
     "paymentTitle": "2. Zahlungsinformationen",
-    "paymentText": "Wir gefährden Ihre Zahlungsinformationen nicht. Alle Zahlungen werden sicher über unseren Zahlungsdienstleister Paddle.com oder den Microsoft Store abgewickelt.",
-    "thirdPartyTitle": "3. Drittanbieterdienste",
-    "thirdPartyText": "Wir nutzen vertrauenswürdige Drittanbieter für die Sprache-zu-Text-Verarbeitung (z. B. Deepgram, OpenAI), um eine hohe Genauigkeit zu gewährleisten. Diese Anbieter unterliegen strengen Datenschutzvereinbarungen.",
-    "contactTitle": "4. Kontakt",
+    "paymentText": "Wir gefährden Ihre Zahlungsinformationen nicht. Alle Zahlungen werden sicher über unseren Zahlungsdienstлестер Paddle.com oder den Microsoft Store abgewickelt.",
+    "paddleTitle": "3. Drittanbieter-Zahlungen (Paddle)",
+    "paddleText": "StreamVox nutzt Paddle (https://paddle.com) als alternativen Zahlungsanbieter neben dem Microsoft Store IAP. Bei der Nutzung von Paddle-Zahlungen erhebt Paddle Ihre E-Mail-Adresse, Rechnungsadresse und Details zur Zahlungsmethode. Paddle verarbeitet Zahlungen als Merchant of Record und folgt seiner eigenen Datenschutzrichtlinie (https://paddle.com/legal/privacy). Es werden keine Zahlungsdaten von StreamVox gespeichert. Sie können stattdessen die Abrechnung über den Microsoft Store wählen, wobei in diesem Fall keine Daten an Paddle weitergegeben werden.",
+    "thirdPartyTitle": "4. Drittanbieterdienste",
+    "thirdPartyText": "Wir nutzen vertrauenswürdige Drittanbieter für die Sprache-zu-Text-Verarbeitung (z. B. Deepgram, OpenAI) um eine hohe Genauigkeit zu gewährleisten. Diese Anbieter unterliegen strengen Datenschutzvereinbarungen.",
+    "contactTitle": "5. Kontakt",
     "contactText": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, kontaktieren Sie uns unter"
   },
   "Terms": {

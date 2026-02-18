@@ -208,15 +208,17 @@
   },
   "Privacy": {
     "title": "Politica de Privacidade",
-    "lastUpdated": "Ultima atualizacao: 5 de fevereiro de 2026",
-    "dataCollectionTitle": "1. Coleta de Dados",
-    "dataCollectionText": "O StreamVox processa dados de audio em tempo real para fornecer servicos de traducao. Esses dados de audio sao processados de forma transitoria e NAO sao armazenados em nossos servidores.",
-    "paymentTitle": "2. Informacoes de Pagamento",
-    "paymentText": "Nao comprometemos suas informacoes de pagamento. Todos os pagamentos sao processados com seguranca pelo nosso Merchant of Record, Paddle.com, ou pela Microsoft Store.",
-    "thirdPartyTitle": "3. Servicos de Terceiros",
-    "thirdPartyText": "Utilizamos provedores terceiros confiaveis para processamento de fala em texto (ex.: Deepgram, OpenAI) para garantir alta precisao. Esses provedores estao vinculados a rigorosos acordos de privacidade de dados.",
-    "contactTitle": "4. Fale Conosco",
-    "contactText": "Se voce tiver alguma duvida sobre esta Politica de Privacidade, entre em contato conosco em"
+    "lastUpdated": "Última atualização: 18 de fevereiro de 2026",
+    "dataCollectionTitle": "1. Coleta de dados",
+    "dataCollectionText": "O StreamVox processa dados de áudio em tempo real para fornecer serviços de tradução. Esses dados de áudio são processados temporariamente e NÃO são armazenados em nossos servidores.",
+    "paymentTitle": "2. Informações de pagamento",
+    "paymentText": "Não comprometemos suas informações de pagamento. Todos os pagamentos são processados com segurança pelo nosso Merchant of Record, Paddle.com, ou pela Microsoft Store.",
+    "paddleTitle": "3. Pagamentos de terceiros (Paddle)",
+    "paddleText": "O StreamVox usa o Paddle (https://paddle.com) como um provedor de pagamento alternativo juntamente com o MS Store IAP. Ao usar os pagamentos do Paddle, o Paddle coleta seu e-mail, endereço de cobrança e detalhes do método de pagamento. O Paddle processa os pagamentos como Merchant of Record e segue sua própria Política de Privacidade (https://paddle.com/legal/privacy). Nenhum dado de pagamento é armazenado pelo StreamVox. Você pode escolher o faturamento da Microsoft Store, caso em que nenhum dado é compartilhado com o Paddle.",
+    "thirdPartyTitle": "4. Serviços de terceiros",
+    "thirdPartyText": "Utilizamos provedores terceirizados confiáveis para processamento de fala em texto (por exemplo, Deepgram, OpenAI) para garantir alta precisão. Esses provedores estão vinculados a acordos rigorosos de privacidade de dados.",
+    "contactTitle": "5. Contate-nos",
+    "contactText": "Se você tiver alguma dúvida sobre esta Política de Privacidade, entre em contato conosco em"
   },
   "Terms": {
     "title": "Termos de Servico",

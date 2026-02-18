@@ -28,6 +28,11 @@ export default function Privacy() {
                         {t("paymentText")}
                     </p>
 
+                    <h2 className="text-2xl font-semibold mt-8 mb-4">{t("paddleTitle")}</h2>
+                    <p className="text-text-muted mb-4">
+                        {t("paddleText")}
+                    </p>
+
                     <h2 className="text-2xl font-semibold mt-8 mb-4">{t("thirdPartyTitle")}</h2>
                     <p className="text-text-muted mb-4">
                         {t("thirdPartyText")}

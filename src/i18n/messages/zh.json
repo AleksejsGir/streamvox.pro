@@ -208,14 +208,16 @@
   },
   "Privacy": {
     "title": "隐私政策",
-    "lastUpdated": "最后更新：2026 年 2 月 5 日",
+    "lastUpdated": "最后更新日期：2026年2月18日",
     "dataCollectionTitle": "1. 数据收集",
-    "dataCollectionText": "StreamVox 实时处理音频数据以提供翻译服务。音频数据仅临时处理，不会存储在我们的服务器上。",
+    "dataCollectionText": "StreamVox 实时处理音频数据以提供翻译服务。这些音频数据是瞬时处理的，不会存储在我们的服务器上。",
     "paymentTitle": "2. 支付信息",
-    "paymentText": "我们不会泄露您的支付信息。所有付款均由我们的授权经销商 Paddle.com 或 Microsoft Store 安全处理。",
-    "thirdPartyTitle": "3. 第三方服务",
-    "thirdPartyText": "我们使用受信任的第三方语音转文字服务提供商（如 Deepgram、OpenAI）以确保高准确度。这些提供商受严格的数据隐私协议约束。",
-    "contactTitle": "4. 联系我们",
+    "paymentText": "我们不会泄露您的支付信息。所有支付均由我们的记录商户 Paddle.com 或 Microsoft Store 安全处理。",
+    "paddleTitle": "3. 第三方支付 (Paddle)",
+    "paddleText": "StreamVox 使用 Paddle (https://paddle.com) 作为 Microsoft Store IAP 之外的备选支付提供商。使用 Paddle 支付时，Paddle 会收集您的电子邮件、账单地址和支付方式详情。Paddle 作为记录商户 (Merchant of Record) 处理支付，并遵循其自身的隐私政策 (https://paddle.com/legal/privacy)。StreamVox 不存储任何支付数据。您可以选择使用 Microsoft Store 结算，在这种情况下，不会与 Paddle 共享任何数据。",
+    "thirdPartyTitle": "4. 第三方服务",
+    "thirdPartyText": "我们使用值得信赖的第三方供应商进行语音转文本处理（例如 Deepgram、OpenAI）以确保高准确性。这些供应商受严格的数据隐私协议约束。",
+    "contactTitle": "5. 联系我们",
     "contactText": "如果您对本隐私政策有任何疑问，请通过以下方式联系我们："
   },
   "Terms": {

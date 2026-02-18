@@ -208,14 +208,16 @@
   },
   "Privacy": {
     "title": "Privacy Policy",
-    "lastUpdated": "Last updated: February 5, 2026",
+    "lastUpdated": "Last updated: February 18, 2026",
     "dataCollectionTitle": "1. Data Collection",
     "dataCollectionText": "StreamVox processes audio data in real-time to provide translation services. This audio data is processed transiently and is NOT stored on our servers.",
     "paymentTitle": "2. Payment Information",
     "paymentText": "We do not compromise your payment information. All payments are securely processed by our Merchant of Record, Paddle.com, or the Microsoft Store.",
-    "thirdPartyTitle": "3. Third-Party Services",
+    "paddleTitle": "3. Third-Party Payments (Paddle)",
+    "paddleText": "StreamVox uses Paddle (https://paddle.com) as an alternative payment provider alongside Microsoft Store IAP. When using Paddle payments, Paddle collects your email, billing address, and payment method details. Paddle processes payments as the Merchant of Record and follows their own Privacy Policy (https://paddle.com/legal/privacy). No payment data is stored by StreamVox. You can choose Microsoft Store billing instead, in which case no data is shared with Paddle.",
+    "thirdPartyTitle": "4. Third-Party Services",
     "thirdPartyText": "We use trusted third-party providers for speech-to-text processing (e.g., Deepgram, OpenAI) to ensure high accuracy. These providers are bound by strict data privacy agreements.",
-    "contactTitle": "4. Contact Us",
+    "contactTitle": "5. Contact Us",
     "contactText": "If you have any questions about this Privacy Policy, please contact us at"
   },
   "Terms": {

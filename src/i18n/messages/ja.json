@@ -208,15 +208,17 @@
   },
   "Privacy": {
     "title": "プライバシーポリシー",
-    "lastUpdated": "最終更新日：2026年2月5日",
+    "lastUpdated": "最終更新日: 2026年2月18日",
     "dataCollectionTitle": "1. データの収集",
-    "dataCollectionText": "StreamVoxは翻訳サービスを提供するために音声データをリアルタイムで処理します。この音声データは一時的に処理されるものであり、当社のサーバーに保存されることはありません。",
-    "paymentTitle": "2. 支払い情報",
-    "paymentText": "お客様の支払い情報を危険にさらすことはありません。すべての支払いは、販売代理店であるPaddle.comまたはMicrosoft Storeによって安全に処理されます。",
-    "thirdPartyTitle": "3. サードパーティサービス",
-    "thirdPartyText": "高い精度を確保するために、音声テキスト変換処理に信頼できるサードパーティプロバイダー（例：Deepgram、OpenAI）を使用しています。これらのプロバイダーは厳格なデータプライバシー契約に基づいています。",
-    "contactTitle": "4. お問い合わせ",
-    "contactText": "このプライバシーポリシーについてご質問がある場合は、こちらまでご連絡ください："
+    "dataCollectionText": "StreamVoxは、翻訳サービスを提供するために音声データをリアルタイムで処理します。この音声データは一時的に処理され、当社のサーバーに保存されることはありません。",
+    "paymentTitle": "2. お支払い情報",
+    "paymentText": "お客様のお支払い情報を損なうことはありません。すべてのお支払いは、当社のMerchant of RecordであるPaddle.comまたはMicrosoft Storeによって安全に処理されます。",
+    "paddleTitle": "3. サードパーティ決済 (Paddle)",
+    "paddleText": "StreamVoxは、Microsoft Store IAPに加えて、代替の決済プロバイダーとしてPaddle (https://paddle.com) を使用しています。Paddle決済を使用する場合、Paddleはお客様のメールアドレス、請求先住所、および決済方法の詳細を収集します。PaddleはMerchant of Recordとして決済を処理し、独自のプライバシーポリシー (https://paddle.com/legal/privacy) に従います。StreamVoxによって決済データが保存されることはありません。代わりにMicrosoft Storeの請求を選択することもでき、その場合、データがPaddleと共有されることはありません。",
+    "thirdPartyTitle": "4. サードパーティサービス",
+    "thirdPartyText": "高精度を保証するために、音声文字起こし処理（Deepgram、OpenAIなど）に信頼できるサードパーティプロバイダーを使用しています。これらのプロバイダーは、厳格なデータプライバシー契約に拘束されています。",
+    "contactTitle": "5. お問い合わせ",
+    "contactText": "このプライバシーポリシーについてご質問がある場合は、下記までご連絡ください。"
   },
   "Terms": {
     "title": "利用規約",

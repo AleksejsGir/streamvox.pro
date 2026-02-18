@@ -208,15 +208,17 @@
   },
   "Privacy": {
     "title": "Política de privacidad",
-    "lastUpdated": "Última actualización: 5 de febrero de 2026",
+    "lastUpdated": "Última actualización: 18 de febrero de 2026",
     "dataCollectionTitle": "1. Recopilación de datos",
     "dataCollectionText": "StreamVox procesa datos de audio en tiempo real para proporcionar servicios de traducción. Estos datos de audio se procesan de forma transitoria y NO se almacenan en nuestros servidores.",
     "paymentTitle": "2. Información de pago",
-    "paymentText": "No comprometemos tu información de pago. Todos los pagos son procesados de forma segura por nuestro comerciante registrado, Paddle.com, o Microsoft Store.",
-    "thirdPartyTitle": "3. Servicios de terceros",
-    "thirdPartyText": "Utilizamos proveedores de terceros de confianza para el procesamiento de voz a texto (por ejemplo, Deepgram, OpenAI) para garantizar alta precisión. Estos proveedores están sujetos a estrictos acuerdos de privacidad de datos.",
-    "contactTitle": "4. Contáctanos",
-    "contactText": "Si tienes alguna pregunta sobre esta Política de privacidad, contáctanos en"
+    "paymentText": "No comprometemos su información de pago. Todos los pagos se procesan de forma segura a través de nuestro Merchant of Record, Paddle.com, o Microsoft Store.",
+    "paddleTitle": "3. Pagos de terceros (Paddle)",
+    "paddleText": "StreamVox utiliza Paddle (https://paddle.com) como proveedor de pagos alternativo junto con MS Store IAP. Al usar los pagos de Paddle, Paddle recopila su correo electrónico, dirección de facturación y detalles del método de pago. Paddle procesa los pagos como Merchant of Record y sigue su propia Política de Privacidad (https://paddle.com/legal/privacy). StreamVox no almacena ningún dato de pago. Puede elegir la facturación de Microsoft Store en su lugar, en cuyo caso no se comparten datos con Paddle.",
+    "thirdPartyTitle": "4. Servicios de terceros",
+    "thirdPartyText": "Utilizamos proveedores externos de confianza para el procesamiento de voz a texto (por ejemplo, Deepgram, OpenAI) para garantizar una alta precisión. Estos proveedores están sujetos a estrictos acuerdos de privacidad de datos.",
+    "contactTitle": "5. Contáctenos",
+    "contactText": "Si tiene alguna pregunta sobre esta Política de Privacidad, póngase en contacto con nosotros en"
   },
   "Terms": {
     "title": "Términos de servicio",
