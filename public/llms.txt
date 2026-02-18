@@ -57,7 +57,8 @@ Last Updated: 2026-02-18
 
 - **Microsoft Store Certified**: Verified and safe to download
 - **Clean & Secure**: No malware, no bloatware, strict privacy policy
-- **Paddle Payments**: Secure transaction processing for Pro subscriptions
+- **Microsoft Store Payments**: Secure in-app purchases via Microsoft
+- **Paddle Payments**: Secure alternative payment provider (Merchant of Record)
 
 ## Technical Details
 
@@ -73,6 +74,7 @@ Last Updated: 2026-02-18
 - Terms of Service: https://streamvox.pro/terms
 - Contact: hello@alekgir.com
 - LinkedIn: https://www.linkedin.com/in/aleksejs-giruckis-0569a7353/
+- Facebook: https://www.facebook.com/profile.php?id=61586199129069
 - Instagram: https://www.instagram.com/alekgir
 
 ## Target Audiences
