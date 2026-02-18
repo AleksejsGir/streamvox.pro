@@ -77,10 +77,11 @@ export function JsonLd() {
             "Multilingual interface (8 languages)",
             "Privacy-focused (no audio storage)",
             "Mobile call translation via Phone Link",
-            "Low latency subtitle generation"
+            "Low latency subtitle generation",
+            "Secure payments via Paddle and Microsoft Store"
         ],
         "screenshot": `${baseUrl}/assets/showcase/StreamVox_main.png`,
-        "softwareVersion": "1.1.8",
+        "softwareVersion": "1.1.9",
         "datePublished": "2026-01-27",
         "dateModified": "2026-02-18",
         "aggregateRating": {
