@@ -9,7 +9,7 @@
     "switchLanguage": "切换语言"
   },
   "Hero": {
-    "badge": "v1.1.5 现已发布",
+    "badge": "v1.1.8 现已推出",
     "title": "StreamVox",
     "titleGradient": "实时AI字幕与翻译",
     "description": "Windows PC 上任何音频的即时翻译。理解通话，观看外国流媒体，畅玩游戏，不再有语言障碍。",
@@ -262,5 +262,25 @@
     "ogDescription": "借助 AI 驱动的字幕，即时打破 Windows 上任何应用的语言障碍。",
     "twitterTitle": "StreamVox - AI 实时翻译工具",
     "twitterDescription": "为 Windows 上的通话、直播和电影提供 AI 实时字幕。"
+  },
+  "Reviews": {
+    "title": "深受",
+    "titleCommunity": "社区喜爱",
+    "badge": "用户信赖",
+    "subtitle": "看看经过验证的用户在 Microsoft Store 上如何评价 StreamVox。",
+    "verified": "已验证",
+    "msStore": "Microsoft Store",
+    "review1": {
+      "title": "完美完成工作",
+      "content": "我需要用于国际 Zoom 通话的字幕。这非常好用。快速、准确、易于使用。免费版很大方。推荐"
+    },
+    "review2": {
+      "title": "国际通话必备",
+      "content": "StreamVox 提供像承诺那样闪电般的快速翻译。我将其用于商务会议，低延迟让对话感觉自然。Windows 用户必备的应用。"
+    },
+    "review3": {
+      "title": "难以置信的准确性",
+      "content": "起初我很怀疑，但实时翻译非常准确。它帮我不用等字幕就能看动漫！"
+    }
   }
 }

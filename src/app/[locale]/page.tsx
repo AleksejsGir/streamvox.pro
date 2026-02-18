@@ -2,6 +2,7 @@ import { setRequestLocale } from "next-intl/server";
 import { Navbar } from "@/widgets/Navbar";
 import { Hero } from "@/widgets/Hero";
 import { SmartOverlayDemo } from "@/features/SmartOverlay/Demo";
+import { Reviews } from "@/widgets/Reviews";
 import { UseCases } from "@/widgets/UseCases";
 import { Features } from "@/widgets/Features";
 import { Pricing } from "@/widgets/Pricing";
@@ -21,6 +22,7 @@ export default async function Home({
             <Navbar />
             <Hero />
             <SmartOverlayDemo />
+            <Reviews />
             <Features />
             <UseCases />
             <Pricing />

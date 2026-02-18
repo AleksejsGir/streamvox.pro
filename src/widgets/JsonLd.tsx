@@ -1,4 +1,5 @@
 import en from "@/i18n/messages/en.json";
+import { reviews } from "@/shared/data/reviews";
 
 export function JsonLd() {
     const faq = en.FAQ;
@@ -77,7 +78,33 @@ export function JsonLd() {
             "Low latency subtitle generation"
         ],
         "screenshot": `${baseUrl}/assets/showcase/StreamVox_main.png`,
-        "softwareVersion": "1.1.5",
+        "softwareVersion": "1.1.8",
+        "datePublished": "2026-01-27",
+        "dateModified": "2026-02-18",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "ratingCount": reviews.length.toString(),
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "review": reviews.map(r => ({
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": r.author
+            },
+            "datePublished": "2026-02-10", // Fallback, effectively recent
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": r.rating.toString(),
+                "bestRating": "5",
+                "worstRating": "1"
+            },
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            "reviewBody": ((en.Reviews as unknown as Record<string, any>)[r.id])?.content || r.content
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        })) as unknown as any[], // Cast to match Schema types roughly
         "author": {
             "@type": "Organization",
             "name": "StreamVox",

@@ -9,7 +9,7 @@
     "switchLanguage": "Mudar idioma"
   },
   "Hero": {
-    "badge": "v1.1.5 Disponivel",
+    "badge": "v1.1.8 Já Disponível",
     "title": "StreamVox",
     "titleGradient": "Legendas IA e tradução em tempo real",
     "description": "Tradução instantânea para qualquer áudio no seu PC Windows. Entenda chamadas, assista a streams estrangeiros e jogue sem barreiras linguísticas.",
@@ -262,5 +262,25 @@
     "ogDescription": "Quebre barreiras linguisticas instantaneamente com legendas alimentadas por IA para qualquer app no Windows.",
     "twitterTitle": "StreamVox - Tradutor de IA em Tempo Real",
     "twitterDescription": "Legendas de IA ao vivo para chamadas, streams e filmes no Windows."
+  },
+  "Reviews": {
+    "title": "Amado pela",
+    "titleCommunity": "Comunidade",
+    "badge": "Confiado pelos Usuários",
+    "subtitle": "Veja o que os usuários verificados estão dizendo sobre o StreamVox na Microsoft Store.",
+    "verified": "Verificado",
+    "msStore": "Microsoft Store",
+    "review1": {
+      "title": "Faz o trabalho perfeitamente",
+      "content": "Precisava de legendas para chamadas internacionais no zoom. Funciona muito bem. Rápido, correto, fácil de usar. A versão gratuita é generosa. Recomendado"
+    },
+    "review2": {
+      "title": "Essencial para chamadas internacionais",
+      "content": "O StreamVox entrega tradução ultra rápida exatamente como prometido. Eu uso para conferências de negócios, e a baixa latência faz as conversas parecerem naturais. Um aplicativo indispensável para usuários de Windows."
+    },
+    "review3": {
+      "title": "Precisão incrível",
+      "content": "Eu estava cético no início, mas a tradução em tempo real é precisa. Me ajuda a assistir animes sem esperar por legendas!"
+    }
   }
 }

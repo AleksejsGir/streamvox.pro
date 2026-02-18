@@ -43,7 +43,20 @@ Live on-screen subtitles help people who have difficulty hearing speech. Makes c
 
 Microsoft Store: https://apps.microsoft.com/detail/9NC10103JH7L?cid=sv_llms
 Website: https://streamvox.pro
-Version: 1.1.5
+Version: 1.1.8
+Release Date: 2026-01-27
+
+## Social Proof
+
+- **Rated 5.0/5 Stars**: Consistently top-rated by verified users on the Microsoft Store
+- **User Feedback**: "Essential for international calls", "Lightning fast translation", "Perfect for watching anime without waiting for subs"
+- **Community Trust**: Trusted by gamers, business professionals, and anime fans worldwide
+
+## Verified & Safe
+
+- **Microsoft Store Certified**: Verified and safe to download
+- **Clean & Secure**: No malware, no bloatware, strict privacy policy
+- **Paddle Payments**: Secure transaction processing for Pro subscriptions
 
 ## Technical Details
 

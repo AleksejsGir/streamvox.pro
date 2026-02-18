@@ -9,7 +9,7 @@
     "switchLanguage": "Cambiar idioma"
   },
   "Hero": {
-    "badge": "v1.1.5 Ya disponible",
+    "badge": "v1.1.8 Ya disponible",
     "title": "StreamVox",
     "titleGradient": "Subtítulos IA y traducción en tiempo real",
     "description": "Traducción instantánea para cualquier audio en tu PC con Windows. Entiende llamadas, mira streams extranjeros y juega sin barreras de idioma.",
@@ -262,5 +262,25 @@
     "ogDescription": "Rompe las barreras del idioma al instante con subtítulos impulsados por IA para cualquier aplicación en Windows.",
     "twitterTitle": "StreamVox - Traductor con IA en tiempo real",
     "twitterDescription": "Subtítulos en vivo con IA para llamadas, streams y películas en Windows."
+  },
+  "Reviews": {
+    "title": "Amado por la",
+    "titleCommunity": "Comunidad",
+    "badge": "Confiado por Usuarios",
+    "subtitle": "Mira lo que dicen los usuarios verificados sobre StreamVox en Microsoft Store.",
+    "verified": "Verificado",
+    "msStore": "Microsoft Store",
+    "review1": {
+      "title": "Hace el trabajo perfectamente",
+      "content": "Necesitaba subtítulos para videollamadas internacionales en zoom. Esto funciona genial. Rápido, correcto, fácil de usar. La versión gratuita es generosa. Recomendado"
+    },
+    "review2": {
+      "title": "Esencial para llamadas internacionales",
+      "content": "StreamVox ofrece traducción ultra rápida exactamente como se promete. Lo uso para conferencias de negocios, y la baja latencia hace que las conversaciones se sientan naturales. Una aplicación imprescindible para usuarios de Windows."
+    },
+    "review3": {
+      "title": "Precisión increíble",
+      "content": "Al principio era escéptico, pero la traducción en tiempo real es precisa. ¡Me ayuda a ver anime sin esperar subtítulos!"
+    }
   }
 }

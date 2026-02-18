@@ -9,7 +9,7 @@
     "switchLanguage": "Sprache wechseln"
   },
   "Hero": {
-    "badge": "v1.1.5 Jetzt verfügbar",
+    "badge": "v1.1.8 Jetzt Verfügbar",
     "title": "StreamVox",
     "titleGradient": "KI-Untertitel & Echtzeitübersetzung",
     "description": "Sofortige Übersetzung für jedes Audio auf Ihrem Windows-PC. Verstehen Sie Anrufe, schauen Sie ausländische Streams und spielen Sie Spiele ohne Sprachbarrieren.",
@@ -262,5 +262,25 @@
     "ogDescription": "Sprachbarrieren sofort überwinden mit KI-gestützten Untertiteln für jede App unter Windows.",
     "twitterTitle": "StreamVox - KI-Echtzeit-Übersetzer",
     "twitterDescription": "Live-KI-Untertitel für Anrufe, Streams und Filme unter Windows."
+  },
+  "Reviews": {
+    "title": "Geliebt von der",
+    "titleCommunity": "Community",
+    "badge": "Von Nutzern vertraut",
+    "subtitle": "Sehen Sie, was verifizierte Nutzer über StreamVox im Microsoft Store sagen.",
+    "verified": "Verifiziert",
+    "msStore": "Microsoft Store",
+    "review1": {
+      "title": "Erledigt den Job perfekt",
+      "content": "Ich brauchte Untertitel für internationale Zoom-Anrufe. Das funktioniert großartig. Schnell, korrekt, einfach zu bedienen. Die kostenlose Version ist großzügig. Empfohlen"
+    },
+    "review2": {
+      "title": "Unverzichtbar für internationale Anrufe",
+      "content": "StreamVox liefert blitzschnelle Übersetzungen genau wie versprochen. Ich nutze es für Geschäftskonferenzen, und die geringe Latenz lässt Gespräche natürlich wirken. Eine Must-Have-App für Windows-Nutzer."
+    },
+    "review3": {
+      "title": "Unglaubliche Genauigkeit",
+      "content": "Ich war anfangs skeptisch, aber die Echtzeit-Übersetzung ist punktgenau. Es hilft mir, Anime ohne Warten auf Untertitel zu schauen!"
+    }
   }
 }
