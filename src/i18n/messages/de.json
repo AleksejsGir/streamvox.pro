@@ -9,7 +9,7 @@
     "switchLanguage": "Sprache wechseln"
   },
   "Hero": {
-    "badge": "v1.1.9 Jetzt Verfügbar",
+    "badge": "v1.2.1 Jetzt Verfügbar",
     "title": "StreamVox",
     "titleGradient": "KI-Untertitel & Echtzeitübersetzung",
     "description": "Sofortige Übersetzung für jedes Audio auf Ihrem Windows-PC. Verstehen Sie Anrufe, schauen Sie ausländische Streams und spielen Sie Spiele ohne Sprachbarrieren.",
@@ -77,7 +77,7 @@
     "freePrice": "$0",
     "freePeriod": "/für immer",
     "freeDesc": "Erleben Sie die Magie der Echtzeitübersetzung mit täglichem kostenlosen Zugang.",
-    "freeFeat1": "30 Minuten kostenlose Nutzung alle 24 Stunden",
+    "freeFeat1": "20 Minuten kostenlose Nutzung alle 24 Stunden",
     "freeFeat2": "Zugang zu Standard-Modellen",
     "freeFeat3": "Community-Support",
     "freeBtn": "Kostenlose Version herunterladen",
@@ -128,7 +128,7 @@
     "q12": "Wie funktioniert die Overlay-Funktion?",
     "a12": "StreamVox zeigt Untertitel in einem schwebenden Overlay-Fenster an, das über jeder Anwendung sichtbar bleibt. Sie können Transparenz, Position und Größe an Ihre Vorlieben anpassen, ohne Ihre Inhalte zu verdecken.",
     "q13": "Gibt es eine kostenlose Version?",
-    "a13": "Ja! Mit StreamVox Free können Sie bis zu 30 Minuten pro Tag übersetzen. StreamVox Pro ($5.99/Monat) bietet unbegrenzte Übersetzungszeit für Power-User."
+    "a13": "Ja! Mit StreamVox Free können Sie bis zu 20 Minuten pro Tag übersetzen. StreamVox Pro ($5.99/Monat) bietet unbegrenzte Übersetzungszeit für Power-User."
   },
   "Footer": {
     "description": "Der Echtzeit-KI-Übersetzer der nächsten Generation für Windows.",
@@ -228,7 +228,7 @@
     "subscriptionsTitle": "2. Abonnements",
     "subscriptionsText": "StreamVox Pro wird auf Abonnementbasis abgerechnet ($5.99/Monat). Sie können Ihr Abonnement jederzeit kündigen.",
     "usageLimitsTitle": "3. Nutzungslimits",
-    "usageLimitsText": "Der kostenlose Einstiegsplan ist auf 30 Minuten Übersetzung pro 24 Stunden begrenzt. StreamVox Pro bietet unbegrenzte Übersetzungszeit.",
+    "usageLimitsText": "Der kostenlose Einstiegsplan ist auf 20 Minuten Übersetzung pro 24 Stunden begrenzt. StreamVox Pro bietet unbegrenzte Übersetzungszeit.",
     "privacyTitle": "4. Datenschutz",
     "privacyText": "Ihr Datenschutz ist uns wichtig. Bitte lesen Sie unsere",
     "privacyLink": "Datenschutzrichtlinie",

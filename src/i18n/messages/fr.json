@@ -9,7 +9,7 @@
     "switchLanguage": "Changer de langue"
   },
   "Hero": {
-    "badge": "v1.1.9 Maintenant Disponible",
+    "badge": "v1.2.1 Maintenant Disponible",
     "title": "StreamVox",
     "titleGradient": "Sous-titres IA et traduction en temps réel",
     "description": "Traduction instantanée de tout l'audio sur votre PC Windows. Comprenez les appels, regardez des streams étrangers et jouez sans barrière de la langue.",
@@ -77,7 +77,7 @@
     "freePrice": "$0",
     "freePeriod": "/pour toujours",
     "freeDesc": "Decouvrez la magie de la traduction en temps reel avec un acces quotidien gratuit.",
-    "freeFeat1": "30 minutes d'utilisation gratuite toutes les 24 heures",
+    "freeFeat1": "20 minutes d'utilisation gratuite toutes les 24 heures",
     "freeFeat2": "Acces aux modeles standard",
     "freeFeat3": "Support communautaire",
     "freeBtn": "Telecharger la version gratuite",
@@ -128,7 +128,7 @@
     "q12": "Comment fonctionne la superposition ?",
     "a12": "StreamVox affiche les sous-titres dans une fenetre flottante qui reste au premier plan de toute application. Vous pouvez ajuster la transparence, la position et la taille selon vos preferences sans bloquer votre contenu.",
     "q13": "Existe-t-il une version gratuite ?",
-    "a13": "Oui ! StreamVox Gratuit vous permet de traduire jusqu'a 30 minutes par jour. StreamVox Pro ($5.99/mois) offre un temps de traduction illimite pour les utilisateurs intensifs."
+    "a13": "Oui ! StreamVox Gratuit vous permet de traduire jusqu'a 20 minutes par jour. StreamVox Pro ($5.99/mois) offre un temps de traduction illimite pour les utilisateurs intensifs."
   },
   "Footer": {
     "description": "Le traducteur IA en temps reel de nouvelle generation pour Windows.",
@@ -228,7 +228,7 @@
     "subscriptionsTitle": "2. Abonnements",
     "subscriptionsText": "StreamVox Pro est facture sur la base d'un abonnement ($5.99/mois). Vous pouvez annuler votre abonnement a tout moment.",
     "usageLimitsTitle": "3. Limites d'utilisation",
-    "usageLimitsText": "Le plan Gratuit est limite a 30 minutes de traduction par 24 heures. StreamVox Pro offre un temps de traduction illimite.",
+    "usageLimitsText": "Le plan Gratuit est limite a 20 minutes de traduction par 24 heures. StreamVox Pro offre un temps de traduction illimite.",
     "privacyTitle": "4. Confidentialite",
     "privacyText": "Votre vie privee est importante pour nous. Veuillez consulter notre",
     "privacyLink": "Politique de confidentialite",

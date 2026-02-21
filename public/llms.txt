@@ -36,14 +36,14 @@ Live on-screen subtitles help people who have difficulty hearing speech. Makes c
 
 ## Pricing
 
-- **StreamVox Free**: 30 minutes per day, no credit card required
+- **StreamVox Free**: 20 minutes per day, no credit card required
 - **StreamVox Pro**: $5.99/month, unlimited translation time
 
 ## Download
 
 Microsoft Store: https://apps.microsoft.com/detail/9NC10103JH7L?cid=sv_llms
 Website: https://streamvox.pro
-Version: 1.1.9
+Version: 1.2.1
 Release Date: 2026-01-27
 Last Updated: 2026-02-18
 

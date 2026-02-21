@@ -49,6 +49,6 @@ export const faqData = [
     },
     {
         question: "Is there a free version?",
-        answer: "Yes! StreamVox Free lets you translate up to 30 minutes per day. StreamVox Pro ($5.99/month) provides unlimited translation time for power users."
+        answer: "Yes! StreamVox Free lets you translate up to 20 minutes per day. StreamVox Pro ($5.99/month) provides unlimited translation time for power users."
     }
 ];

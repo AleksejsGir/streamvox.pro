@@ -25,7 +25,7 @@ export const articleContent: Record<string, React.ReactNode> = {
                 Upgrading to StreamVox Pro unlocks the full potential of the app:
             </p>
             <ul>
-                <li><strong>Unlimited Translation</strong>: No more 30-minute daily limit. Translate as much as you want.</li>
+                <li><strong>Unlimited Translation</strong>: No more 20-minute daily limit. Translate as much as you want.</li>
                 <li><strong>Priority Support</strong>: Get faster responses to your questions and issues.</li>
                 <li><strong>Early Access</strong>: Be the first to try new features before they release to everyone.</li>
             </ul>
@@ -117,7 +117,7 @@ export const articleContent: Record<string, React.ReactNode> = {
 
             <h2>Get Started Today</h2>
             <p>
-                The free version gives you 30 minutes per day - enough to watch an episode. StreamVox Pro ($5.99/month) unlocks unlimited translation.
+                The free version gives you 20 minutes per day - enough to watch an episode. StreamVox Pro ($5.99/month) unlocks unlimited translation.
             </p>
         </div>
     ),
@@ -244,7 +244,7 @@ export const articleContent: Record<string, React.ReactNode> = {
 
             <h2>Get Started</h2>
             <p>
-                StreamVox Free gives you 30 minutes daily - enough for a few scenes. Go Pro for unlimited VN sessions.
+                StreamVox Free gives you 20 minutes daily - enough for a few scenes. Go Pro for unlimited VN sessions.
             </p>
         </div>
     ),
@@ -318,7 +318,7 @@ export const articleContent: Record<string, React.ReactNode> = {
             <ul>
                 <li><strong>Best for</strong>: Live translation of any audio on Windows</li>
                 <li><strong>Features</strong>: Floating overlay, 10+ languages, system audio capture</li>
-                <li><strong>Price</strong>: Free (30 min/day) or $5.99/month Pro</li>
+                <li><strong>Price</strong>: Free (20 min/day) or $5.99/month Pro</li>
                 <li><strong>Unique</strong>: Works with any app - games, movies, calls, streams</li>
             </ul>
 

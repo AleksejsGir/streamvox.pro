@@ -9,7 +9,7 @@
     "switchLanguage": "言語を切り替え"
   },
   "Hero": {
-    "badge": "v1.1.9 利用可能",
+    "badge": "v1.2.1 利用可能",
     "title": "StreamVox",
     "titleGradient": "リアルタイムAI字幕・翻訳",
     "description": "Windows PC上のあらゆる音声を瞬時に翻訳。通話を理解し、海外のストリームを見て、言葉の壁なくゲームを楽しみましょう。",
@@ -77,7 +77,7 @@
     "freePrice": "$0",
     "freePeriod": "/永久無料",
     "freeDesc": "毎日の無料枠でリアルタイム翻訳の魅力を体験。",
-    "freeFeat1": "24時間ごとに30分間無料で利用可能",
+    "freeFeat1": "24時間ごとに20分間無料で利用可能",
     "freeFeat2": "標準モデルへのアクセス",
     "freeFeat3": "コミュニティサポート",
     "freeBtn": "無料版をダウンロード",
@@ -128,7 +128,7 @@
     "q12": "オーバーレイ機能はどのように動作しますか？",
     "a12": "StreamVoxは、あらゆるアプリケーションの上に常に表示されるフローティングオーバーレイウィンドウに字幕を表示します。透明度、位置、サイズを調整して、コンテンツを遮ることなくお好みに合わせられます。",
     "q13": "無料版はありますか？",
-    "a13": "はい！StreamVox Freeでは1日最大30分まで翻訳できます。StreamVox Pro（$5.99/月）はヘビーユーザー向けに翻訳時間無制限を提供します。"
+    "a13": "はい！StreamVox Freeでは1日最大20分まで翻訳できます。StreamVox Pro（$5.99/月）はヘビーユーザー向けに翻訳時間無制限を提供します。"
   },
   "Footer": {
     "description": "Windows向け次世代リアルタイムAI翻訳ツール。",
@@ -228,7 +228,7 @@
     "subscriptionsTitle": "2. サブスクリプション",
     "subscriptionsText": "StreamVox Proはサブスクリプション方式で課金されます（$5.99/月）。いつでもサブスクリプションをキャンセルできます。",
     "usageLimitsTitle": "3. 利用制限",
-    "usageLimitsText": "Free Starterプランは、24時間あたり30分の翻訳に制限されています。StreamVox Proは翻訳時間無制限を提供します。",
+    "usageLimitsText": "Free Starterプランは、24時間あたり20分の翻訳に制限されています。StreamVox Proは翻訳時間無制限を提供します。",
     "privacyTitle": "4. プライバシー",
     "privacyText": "お客様のプライバシーは当社にとって重要です。当社の",
     "privacyLink": "プライバシーポリシー",

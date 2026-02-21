@@ -54,7 +54,7 @@ export function JsonLd() {
                 "name": "StreamVox Free",
                 "price": "0",
                 "priceCurrency": "USD",
-                "description": "30 minutes per day, no credit card required"
+                "description": "20 minutes per day, no credit card required"
             },
             {
                 "@type": "Offer",
@@ -81,7 +81,7 @@ export function JsonLd() {
             "Secure payments via Paddle and Microsoft Store"
         ],
         "screenshot": `${baseUrl}/assets/showcase/StreamVox_main.png`,
-        "softwareVersion": "1.1.9",
+        "softwareVersion": "1.2.1",
         "datePublished": "2026-01-27",
         "dateModified": "2026-02-18",
         "aggregateRating": {

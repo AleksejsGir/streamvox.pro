@@ -9,7 +9,7 @@
     "switchLanguage": "切换语言"
   },
   "Hero": {
-    "badge": "v1.1.9 现已推出",
+    "badge": "v1.2.1 现已推出",
     "title": "StreamVox",
     "titleGradient": "实时AI字幕与翻译",
     "description": "Windows PC 上任何音频的即时翻译。理解通话，观看外国流媒体，畅玩游戏，不再有语言障碍。",
@@ -77,7 +77,7 @@
     "freePrice": "$0",
     "freePeriod": "/永久免费",
     "freeDesc": "每天免费体验实时翻译的魅力。",
-    "freeFeat1": "每 24 小时 30 分钟免费使用",
+    "freeFeat1": "每 24 小时 20 分钟免费使用",
     "freeFeat2": "使用标准模型",
     "freeFeat3": "社区支持",
     "freeBtn": "下载免费版",
@@ -128,7 +128,7 @@
     "q12": "悬浮窗功能是怎么运作的？",
     "a12": "StreamVox 在悬浮窗口中显示字幕，始终置顶于任何应用之上。你可以调整透明度、位置和大小，在不遮挡内容的情况下满足你的偏好。",
     "q13": "有免费版吗？",
-    "a13": "有！StreamVox 免费版每天可翻译 30 分钟。StreamVox Pro（$5.99/月）为重度用户提供无限翻译时长。"
+    "a13": "有！StreamVox 免费版每天可翻译 20 分钟。StreamVox Pro（$5.99/月）为重度用户提供无限翻译时长。"
   },
   "Footer": {
     "description": "新一代 Windows AI 实时翻译工具。",
@@ -228,7 +228,7 @@
     "subscriptionsTitle": "2. 订阅",
     "subscriptionsText": "StreamVox Pro 按月订阅计费（$5.99/月）。您可以随时取消订阅。",
     "usageLimitsTitle": "3. 使用限制",
-    "usageLimitsText": "免费入门版限制为每 24 小时 30 分钟翻译时长。StreamVox Pro 提供无限翻译时长。",
+    "usageLimitsText": "免费入门版限制为每 24 小时 20 分钟翻译时长。StreamVox Pro 提供无限翻译时长。",
     "privacyTitle": "4. 隐私",
     "privacyText": "我们重视您的隐私。请查阅我们的",
     "privacyLink": "隐私政策",
