@@ -1,5 +1,13 @@
+import { getMetadataAlternates } from "@/shared/lib/seo";
 import { setRequestLocale } from "next-intl/server";
 import { Navbar } from "@/widgets/Navbar";
+import { Metadata } from "next";
+
+export async function generateMetadata(): Promise<Metadata> {
+    return {
+        alternates: getMetadataAlternates(""),
+    };
+}
 import { Hero } from "@/widgets/Hero";
 import { SmartOverlayDemo } from "@/features/SmartOverlay/Demo";
 import { Reviews } from "@/widgets/Reviews";

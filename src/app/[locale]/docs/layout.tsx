@@ -3,6 +3,8 @@ import type { ReactNode } from "react";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 
+import { getMetadataAlternates } from "@/shared/lib/seo";
+
 export function generateStaticParams() {
     return routing.locales.map((locale) => ({ locale }));
 }
@@ -17,11 +19,6 @@ export async function generateMetadata({
 
     const baseUrl = "https://streamvox.pro";
 
-    const alternateLanguages: Record<string, string> = {};
-    for (const loc of routing.locales) {
-        alternateLanguages[loc] = `${baseUrl}/${loc}/docs`;
-    }
-
     return {
         title: `${t("title")} | StreamVox`,
         description: t("subtitle"),
@@ -32,10 +29,7 @@ export async function generateMetadata({
             url: `${baseUrl}/${locale}/docs`,
             type: "website",
         },
-        alternates: {
-            canonical: `/${locale}/docs`,
-            languages: alternateLanguages,
-        },
+        alternates: getMetadataAlternates("docs"),
     };
 }
 

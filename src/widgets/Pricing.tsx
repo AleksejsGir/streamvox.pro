@@ -29,9 +29,9 @@ export function Pricing() {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
                     {/* Free Starter */}
-                    <div className="relative p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm flex flex-col">
+                    <div className="relative p-6 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm flex flex-col">
                         <div className="mb-6">
                             <h3 className="text-xl font-bold mb-2">{t("freeTitle")}</h3>
                             <div className="flex items-baseline gap-1">
@@ -58,17 +58,18 @@ export function Pricing() {
                             </li>
                         </ul>
 
-                        <a href="https://apps.microsoft.com/detail/9NC10103JH7L?cid=sv_website" target="_blank" rel="noopener noreferrer">
-                            <Button variant="outline" className="w-full bg-transparent hover:bg-white/5 border-white/20 h-10 group">
-                                <WindowsLogo className="mr-2 h-4 w-4 fill-current opacity-70 group-hover:opacity-100 transition-opacity" />
-                                {t("freeBtn")}
-                            </Button>
-                        </a>
+                        <div className="mt-auto">
+                            <a href="https://apps.microsoft.com/detail/9NC10103JH7L?cid=sv_website" target="_blank" rel="noopener noreferrer">
+                                <Button variant="outline" className="w-full bg-transparent hover:bg-white/5 border-white/20 h-12 group">
+                                    <WindowsLogo className="mr-2 h-4 w-4 fill-current opacity-70 group-hover:opacity-100 transition-opacity" />
+                                    {t("freeBtn")}
+                                </Button>
+                            </a>
+                        </div>
                     </div>
 
                     {/* StreamVox Pro */}
-                    <div className="relative p-8 rounded-3xl bg-black/40 border border-primary/50 shadow-[0_0_30px_-10px_rgba(6,182,212,0.3)] flex flex-col">
-                        {/* Recommended Badge */}
+                    <div className="relative p-6 rounded-3xl bg-black/40 border border-primary/50 shadow-[0_0_30px_-10px_rgba(6,182,212,0.3)] flex flex-col xl:scale-105 z-10">
                         {/* Recommended Badge */}
                         <div className="absolute top-0 right-0 bg-primary text-black text-xs font-bold px-3 py-1 rounded-bl-xl rounded-tr-2xl">
                             {t("recommended")}
@@ -98,17 +99,9 @@ export function Pricing() {
                                 <Check className="w-5 h-5 text-primary" />
                                 <span className="text-sm">{t("proFeat3")}</span>
                             </li>
-                            <li className="flex items-center gap-3">
-                                <Check className="w-5 h-5 text-primary" />
-                                <span className="text-sm">{t("proFeat4")}</span>
-                            </li>
-                            <li className="flex items-center gap-3">
-                                <Check className="w-5 h-5 text-primary" />
-                                <span className="text-sm">{t("proFeat5")}</span>
-                            </li>
                         </ul>
 
-                        <div className="space-y-6">
+                        <div className="space-y-4 mt-auto">
                             <a href="https://apps.microsoft.com/detail/9NC10103JH7L?cid=sv_website" target="_blank" rel="noopener noreferrer" className="block w-full">
                                 <Button className="w-full h-12 text-sm font-bold bg-white/5 hover:bg-white/10 backdrop-blur-md border border-primary/50 hover:border-primary shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:scale-[1.02] transition-all rounded-lg group">
                                     <WindowsLogo className="mr-2 h-5 w-5 text-primary fill-current" />
@@ -117,15 +110,93 @@ export function Pricing() {
                                     </span>
                                 </Button>
                             </a>
-                            <Button variant="outline" className="w-full border-white/20 hover:bg-white/5" disabled>
-                                {t("proBtnWeb")}
-                            </Button>
                         </div>
-                        <p className="text-xs text-text-muted text-center mt-4">
-                            {t("proGuarantee")}
-                        </p>
+                    </div>
+
+                    {/* StreamVox Pro Plus */}
+                    <div className="relative p-6 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm flex flex-col">
+                        <div className="mb-6">
+                            <h3 className="text-xl font-bold mb-2">{t("proPlusTitle")}</h3>
+                            <div className="flex items-baseline gap-1">
+                                <span className="text-4xl font-bold text-white">{t("proPlusPrice")}</span>
+                                <span className="text-text-muted">{t("proPlusPeriod")}</span>
+                            </div>
+                            <p className="text-sm text-text-muted mt-4">
+                                {t("proPlusDesc")}
+                            </p>
+                        </div>
+
+                        <ul className="space-y-4 mb-8 flex-grow">
+                            <li className="flex items-center gap-3">
+                                <Check className="w-5 h-5 text-primary" />
+                                <span className="text-sm">{t("proPlusFeat1")}</span>
+                            </li>
+                            <li className="flex items-center gap-3">
+                                <Check className="w-5 h-5 text-primary" />
+                                <span className="text-sm">{t("proFeat2")}</span>
+                            </li>
+                            <li className="flex items-center gap-3">
+                                <Check className="w-5 h-5 text-primary" />
+                                <span className="text-sm">{t("proFeat3")}</span>
+                            </li>
+                        </ul>
+
+                        <div className="space-y-4 mt-auto">
+                            <a href="https://apps.microsoft.com/detail/9NC10103JH7L?cid=sv_website" target="_blank" rel="noopener noreferrer" className="block w-full">
+                                <Button className="w-full h-12 text-sm font-bold bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 hover:scale-[1.02] transition-all rounded-lg group">
+                                    <WindowsLogo className="mr-2 h-5 w-5 text-white/80 fill-current" />
+                                    <span className="text-white font-bold">
+                                        {t("proBtn")}
+                                    </span>
+                                </Button>
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* StreamVox Unlimited */}
+                    <div className="relative p-6 rounded-3xl bg-white/5 border border-amber-500/30 backdrop-blur-sm flex flex-col shadow-[0_0_20px_-10px_rgba(245,158,11,0.2)]">
+                        <div className="mb-6">
+                            <h3 className="text-xl font-bold mb-2 text-amber-500">{t("unlimitedTitle")}</h3>
+                            <div className="flex items-baseline gap-1">
+                                <span className="text-4xl font-bold text-white">{t("unlimitedPrice")}</span>
+                                <span className="text-text-muted">{t("unlimitedPeriod")}</span>
+                            </div>
+                            <p className="text-sm text-text-muted mt-4">
+                                {t("unlimitedDesc")}
+                            </p>
+                        </div>
+
+                        <ul className="space-y-4 mb-8 flex-grow">
+                            <li className="flex items-center gap-3">
+                                <Check className="w-5 h-5 text-amber-500" />
+                                <span className="text-sm">{t("unlimitedFeat1")}</span>
+                            </li>
+                            <li className="flex items-center gap-3">
+                                <Check className="w-5 h-5 text-amber-500" />
+                                <span className="text-sm">{t("proFeat2")}</span>
+                            </li>
+                            <li className="flex items-center gap-3">
+                                <Check className="w-5 h-5 text-amber-500" />
+                                <span className="text-sm">{t("proFeat3")}</span>
+                            </li>
+                        </ul>
+
+                        <div className="space-y-4 mt-auto">
+                            <a href="https://apps.microsoft.com/detail/9NC10103JH7L?cid=sv_website" target="_blank" rel="noopener noreferrer" className="block w-full">
+                                <Button className="w-full h-12 text-sm font-bold bg-amber-500/10 hover:bg-amber-500/20 backdrop-blur-md border border-amber-500/50 text-amber-500 hover:scale-[1.02] transition-all rounded-lg group">
+                                    <WindowsLogo className="mr-2 h-5 w-5 text-amber-500 fill-current" />
+                                    <span className="font-bold">
+                                        {t("proBtn")}
+                                    </span>
+                                </Button>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <p className="text-xs text-text-muted text-center mt-6">
+                    {t("proGuarantee")}
+                </p>
 
                 <div className="text-center mt-12 text-sm text-text-muted">
                     <p>

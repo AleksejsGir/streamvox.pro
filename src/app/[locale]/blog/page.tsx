@@ -8,6 +8,8 @@ import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 
+import { getMetadataAlternates } from "@/shared/lib/seo";
+
 export async function generateMetadata({
     params,
 }: {
@@ -25,6 +27,7 @@ export async function generateMetadata({
             url: `https://streamvox.pro/${locale}/blog`,
             type: "website",
         },
+        alternates: getMetadataAlternates("blog"),
     };
 }
 

@@ -27,6 +27,8 @@ export async function generateStaticParams() {
     }));
 }
 
+import { getMetadataAlternates } from "@/shared/lib/seo";
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
     const { slug } = await params;
     const post = getBlogPost(slug);
@@ -48,6 +50,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
             authors: [post.author],
             url: `https://streamvox.pro/blog/${post.slug}`,
         },
+        alternates: getMetadataAlternates(`blog/${post.slug}`),
     };
 }
 

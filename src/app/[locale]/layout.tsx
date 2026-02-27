@@ -41,15 +41,12 @@ export async function generateMetadata({
     return {
         title: t("title"),
         description: t("description"),
-        keywords: ["AI translator", "real-time subtitles", "Windows translator", "speech to text", "live captioning", "StreamVox", "translation app", "anime subtitles", "meeting translator"],
+        keywords: [
+            "AI voice translator", "live translation app", "real-time subtitles", "Windows translator",
+            "speech to text", "live captioning offline", "StreamVox", "anime AI subtitles",
+            "Zoom meeting translator", "game audio translator", "ultra-low latency translation"
+        ],
         authors: [{ name: "AlekGir", url: baseUrl }],
-        alternates: {
-            canonical: `${baseUrl}/${locale}`,
-            languages: {
-                ...alternateLanguages,
-                "x-default": baseUrl,
-            },
-        },
         openGraph: {
             title: t("ogTitle"),
             description: t("ogDescription"),

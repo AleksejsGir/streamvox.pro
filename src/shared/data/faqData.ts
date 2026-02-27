@@ -13,7 +13,7 @@ export const faqData = [
     },
     {
         question: "What languages does StreamVox support?",
-        answer: "StreamVox supports 10+ languages including English, Japanese, Russian, German, Spanish, French, Chinese, Korean, Portuguese, and Italian. Perfect for anime, international gaming, and global meetings."
+        answer: "StreamVox supports 47+ input languages and 49 translation target languages powered by AI. Perfect for anime, international gaming, and global meetings."
     },
     {
         question: "Can I use StreamVox for phone calls?",
@@ -41,7 +41,7 @@ export const faqData = [
     },
     {
         question: "Is the StreamVox interface available in my language?",
-        answer: "Yes! The StreamVox app interface is available in 8 languages: English, Spanish, Portuguese, Chinese, Japanese, German, French, and Russian. You can switch languages in the app settings."
+        answer: "Yes! The StreamVox app interface is available in 12 languages: English, Spanish, Portuguese, Chinese, Japanese, German, French, Russian, Turkish, Italian, Polish, and Korean. You can switch languages in the app settings."
     },
     {
         question: "How does the overlay feature work?",
@@ -49,6 +49,6 @@ export const faqData = [
     },
     {
         question: "Is there a free version?",
-        answer: "Yes! StreamVox Free lets you translate up to 20 minutes per day. StreamVox Pro ($5.99/month) provides unlimited translation time for power users."
+        answer: "Yes! StreamVox Free lets you translate up to 20 minutes per day. StreamVox Pro ($8.99/month), Pro Plus ($14.99/month), and Unlimited ($24.99/month) provide more hours for power users."
     }
 ];

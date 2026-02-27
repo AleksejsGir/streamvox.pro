@@ -6,7 +6,7 @@ export default createMiddleware(routing);
 export const config = {
     matcher: [
         "/",
-        "/(de|en|es|fr|ja|pt|ru|zh)/:path*",
+        "/(de|en|es|fr|it|ja|ko|pl|pt|ru|tr|zh)/:path*",
         // Match all pathnames except for
         // - … if they start with `/api`, `/_next` or `/_vercel`
         // - … the ones containing a dot (e.g. `favicon.ico`)
