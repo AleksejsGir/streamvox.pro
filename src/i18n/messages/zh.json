@@ -156,8 +156,8 @@
     "systemStatus": "系统运行正常"
   },
   "Docs": {
-    "title": "文档",
-    "subtitle": "开始使用 StreamVox 所需的一切",
+    "title": "使用文档",
+    "subtitle": "StreamVox 的所有输入和指导材料",
     "downloadBtn": "从 Microsoft Store 下载",
     "gettingStarted": "快速入门",
     "installation": "安装",
