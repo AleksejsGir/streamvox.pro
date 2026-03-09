@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
             type: "article",
             publishedTime: post.date,
             authors: [post.author],
-            url: `https://streamvox.pro/blog/${post.slug}`,
+            url: `https://www.streamvox.pro/blog/${post.slug}`,
         },
         alternates: getMetadataAlternates(`blog/${post.slug}`),
     };

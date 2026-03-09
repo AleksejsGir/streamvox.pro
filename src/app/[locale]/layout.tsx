@@ -31,7 +31,7 @@ export async function generateMetadata({
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: "Metadata" });
 
-    const baseUrl = "https://streamvox.pro";
+    const baseUrl = "https://www.streamvox.pro";
 
     const alternateLanguages: Record<string, string> = {};
     for (const loc of routing.locales) {

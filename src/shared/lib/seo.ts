@@ -1,7 +1,7 @@
 import { routing } from "@/i18n/routing";
 
 export function getMetadataAlternates(path: string = "") {
-    const baseUrl = "https://streamvox.pro";
+    const baseUrl = "https://www.streamvox.pro";
 
     // Ensure path starts with a slash if it's not empty and doesn't already have one
     const normalizedPath = path && !path.startsWith("/") ? `/${path}` : path;

@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-    const baseUrl = "https://streamvox.pro";
+    const baseUrl = "https://www.streamvox.pro";
 
     return {
         rules: [

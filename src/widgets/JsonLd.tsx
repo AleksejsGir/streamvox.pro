@@ -3,7 +3,7 @@ import { reviews } from "@/shared/data/reviews";
 
 export function JsonLd() {
     const faq = en.FAQ;
-    const baseUrl = "https://streamvox.pro";
+    const baseUrl = "https://www.streamvox.pro";
 
     const organization = {
         "@context": "https://schema.org",

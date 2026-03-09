@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { locales } from "@/i18n/routing";
 import { blogPosts } from "@/shared/data/blogPosts";
 
-const baseUrl = "https://streamvox.pro";
+const baseUrl = "https://www.streamvox.pro";
 
 function buildAlternates(path: string): { languages: Record<string, string> } {
     const languages: Record<string, string> = {};

@@ -24,7 +24,7 @@ export async function generateMetadata({
         openGraph: {
             title: `StreamVox ${t("titleGradient")}`,
             description: t("subtitle"),
-            url: `https://streamvox.pro/${locale}/blog`,
+            url: `https://www.streamvox.pro/${locale}/blog`,
             type: "website",
         },
         alternates: getMetadataAlternates("blog"),

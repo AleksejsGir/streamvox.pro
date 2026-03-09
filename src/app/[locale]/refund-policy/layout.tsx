@@ -17,7 +17,7 @@ export async function generateMetadata({
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: "RefundPolicy" });
 
-    const baseUrl = "https://streamvox.pro";
+    const baseUrl = "https://www.streamvox.pro";
 
     return {
         title: `${t("title")} | StreamVox`,
