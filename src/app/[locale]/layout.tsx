@@ -58,7 +58,7 @@ export async function generateMetadata({
                 {
                     url: `${baseUrl}/assets/showcase/StreamVox_main.png`,
                     width: 1200,
-                    height: 630,
+                    height: 1200,
                     alt: "StreamVox App Showcase",
                 },
             ],
